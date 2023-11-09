@@ -1,15 +1,42 @@
 const express = require('express');
-const Model = require('../models/model');
+// const Model = require('../models/model');
+const FeatureCollection = require('../models/featureCollection');
 const bodyParser = require('body-parser');
 
 const router = express.Router()
 
 module.exports = router;
 
-//Post Method
-// router.post('/post', (req, res) => {
-//     res.send('Post API')
-// })
+// Post Method
+router.post('/post/geoJSON', bodyParser.json(), async (req, res) => {
+    const featureCollection = new FeatureCollection({
+        type: req.body.type,
+        name: req.body.name,
+        crs: req.body.crs,
+        features: req.body.features
+    })
+
+    try {
+        featureCollection.markModified('features');
+        const dataToSave = await featureCollection.save();
+        res.status(200).json(dataToSave)
+    }
+    catch (error) {
+        res.status(400).json({message: error.message})
+    }
+})
+
+// Get all Method
+// Get all feature collections
+router.get('/featureCollections', async (req, res) => {
+    try {
+        const featureCollections = await FeatureCollection.find();
+        res.json(featureCollections);
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+});
+
 
 router.post('/post', bodyParser.json(), async (req, res) => {
     const data = new Model({
