@@ -29,8 +29,22 @@ router.post('/post/geoJSON', bodyParser.json(), async (req, res) => {
 // Get all feature collections
 router.get('/featureCollections', async (req, res) => {
     try {
-        const featureCollections = await FeatureCollection.find();
-        res.json(featureCollections);
+        const featureCollections = await FeatureCollection.find({},{_id:0, __v:0});
+        var allFeatures = [];
+        featureCollections.forEach(featureCollection => {
+            featureCollection.features.forEach(feature => {
+                allFeatures.push(feature);
+            });
+            // allFeatures.push(featureCollection.features);
+        });
+
+        var newCollection = new FeatureCollection({
+            type: "FeatureCollection",
+            name: "All Features",
+            crs: featureCollections[0].crs,
+            features: allFeatures
+        });
+            res.json(newCollection);
     } catch (error) {
         res.status(500).json({ message: error.message });
     }
