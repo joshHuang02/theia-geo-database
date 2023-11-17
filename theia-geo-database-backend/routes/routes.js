@@ -38,6 +38,36 @@ router.get('/getOne/:id', async (req, res) => {
     }
 })
 
+// Get within polygon
+router.get('/getWithinPolygon', bodyParser.json(), async (req, res) => {
+    try {
+        console.log(req.body.coordinates);
+        const data = await FeatureCollection.find({
+            geometry: {
+                $geoWithin: {
+                    $geometry: {
+                        type: "Polygon",
+                        coordinates: [
+                            [
+                              [ -79.98722229310701, 40.42978391567601 ],
+                              [ -79.91434750413637, 40.42499418164428 ],
+                              [ -79.91648576879827, 40.45290438768224 ],
+                              [ -79.96842075038268, 40.46851922166161 ],
+                              [ -80.011985300597, 40.46572823447352 ],
+                              [ -80.01702961693753, 40.429085777483834 ],
+                              [ -79.98722229310701, 40.42978391567601 ]
+                            ]
+                          ],
+                    }
+                }
+            }
+        });
+        res.json(data);
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+});
+
 // Get all feature collections
 router.get('/featureCollections', async (req, res) => {
     try {
