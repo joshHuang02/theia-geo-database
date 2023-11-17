@@ -1,10 +1,79 @@
 {
-"type": "FeatureCollection",
-"name": "Streets and Phipps",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "Name": "Forbes Ave" }, "geometry": { "type": "LineString", "coordinates": [ [ -79.962412581350307, 40.437558277967398 ], [ -79.955348536461997, 40.442741534210697 ], [ -79.948674491109301, 40.444445131505397 ], [ -79.945117055204094, 40.444635568277697 ] ] } },
-{ "type": "Feature", "properties": { "Name": "Fifth Ave" }, "geometry": { "type": "LineString", "coordinates": [ [ -79.946680747631703, 40.447075837138499 ], [ -79.951583850904896, 40.446725347214198 ], [ -79.961332696844593, 40.4396717361398 ], [ -79.963252801796102, 40.438252575901501 ] ] } },
-{ "type": "Feature", "properties": { "Name": "Phipps" }, "geometry": { "type": "Point", "coordinates": [ -79.947956522432904, 40.4388906102877 ] } }
-]
+    "type": "FeatureCollection",
+    "name": "Streets and Phipps",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Forbes Ave"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -79.9624125813503,
+                        40.4375582779674
+                    ],
+                    [
+                        -79.955348536462,
+                        40.4427415342107
+                    ],
+                    [
+                        -79.9486744911093,
+                        40.4444451315054
+                    ],
+                    [
+                        -79.9451170552041,
+                        40.4446355682777
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Fifth Ave"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -79.9466807476317,
+                        40.4470758371385
+                    ],
+                    [
+                        -79.9515838509049,
+                        40.4467253472142
+                    ],
+                    [
+                        -79.9613326968446,
+                        40.4396717361398
+                    ],
+                    [
+                        -79.9632528017961,
+                        40.4382525759015
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Phipps"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.9479565224329,
+                    40.4388906102877
+                ]
+            }
+        }
+    ]
 }

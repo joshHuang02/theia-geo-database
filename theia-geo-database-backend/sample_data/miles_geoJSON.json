@@ -1,5 +1,6 @@
 {
     "type": "FeatureCollection",
+    "name":"Simple placemark",
     "features": [
       {
         "type": "Feature",

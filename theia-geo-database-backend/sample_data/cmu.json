@@ -1,6 +1,6 @@
 {
     "type": "FeatureCollection",
-    "name": "theia test",
+    "name": "CMU",
     "crs": {
         "type": "name",
         "properties": {

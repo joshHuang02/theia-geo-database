@@ -12,10 +12,7 @@ const featureSchema = new mongoose.Schema({
       enum: ['Point', 'LineString', 'Polygon', 'MultiPoint', 'MultiLineString', 'MultiPolygon'],
       required: true
     },
-    coordinates: {
-      type: [[[Number]]],
-      required: true
-    }
+    coordinates: {}
   },
   properties: {
     type: Object,

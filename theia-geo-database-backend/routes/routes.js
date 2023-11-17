@@ -29,7 +29,7 @@ router.post('/post/geoJSON', bodyParser.json(), async (req, res) => {
 // Get all feature collections
 router.get('/featureCollections', async (req, res) => {
     try {
-        const featureCollections = await FeatureCollection.find({},{_id:0, __v:0});
+        const featureCollections = await FeatureCollection.find();
         var allFeatures = [];
         featureCollections.forEach(featureCollection => {
             featureCollection.features.forEach(feature => {
@@ -37,6 +37,8 @@ router.get('/featureCollections', async (req, res) => {
             });
             // allFeatures.push(featureCollection.features);
         });
+
+        if (allFeatures.length == 0) { res.json({ message: "No features found" }) }
 
         var newCollection = new FeatureCollection({
             type: "FeatureCollection",
@@ -62,32 +64,16 @@ router.delete('/delete/:id', async (req, res) => {
     }
 })
 
-
-// router.post('/post', bodyParser.json(), async (req, res) => {
-//     const data = new Model({
-//         name: req.body.name,
-//         age: req.body.age
-//     })
-
-//     try {
-//         const dataToSave = await data.save();
-//         res.status(200).json(dataToSave)
-//     }
-//     catch (error) {
-//         res.status(400).json({message: error.message})
-//     }
-// })
-
-// //Get all Method
-// router.get('/getAll', async (req, res) => {
-//     try{
-//         const data = await Model.find();
-//         res.json(data)
-//     }
-//     catch(error){
-//         res.status(500).json({message: error.message})
-//     }
-// })
+//Delete all method
+router.delete('/deleteAll', async (req, res) => {
+    try {
+        const data = await FeatureCollection.deleteMany({})
+        res.send(`All documents deleted..`)
+    }
+    catch (error) {
+        res.status(400).json({ message: error.message })
+    }
+})
 
 // //Get by ID Method
 // router.get('/getOne/:id', async (req, res) => {
