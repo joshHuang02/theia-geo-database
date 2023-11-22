@@ -1,24 +1,5 @@
+const { ObjectId } = require('mongodb');
 const mongoose = require('mongoose');
-
-const featureSchema = new mongoose.Schema({
-  type: {
-    type: String,
-    enum: ['Feature'],
-    required: true
-  },
-  geometry: {
-    type: {
-      type: String,
-      enum: ['Point', 'LineString', 'Polygon', 'MultiPoint', 'MultiLineString', 'MultiPolygon'],
-      required: true
-    },
-    coordinates: {}
-  },
-  properties: {
-    type: Object,
-    required: true
-  }
-});
 
 const crsSchema = new mongoose.Schema({
   type: {
@@ -46,8 +27,8 @@ const featureCollectionSchema = new mongoose.Schema({
   crs: {
     type: crsSchema
   },
-  features: {
-    type: [featureSchema],
+  featureIds: {
+    type: [ObjectId],
     required: true
   }
 });

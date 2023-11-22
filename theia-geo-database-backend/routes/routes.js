@@ -1,6 +1,7 @@
 const express = require('express');
 // const Model = require('../models/model');
 const FeatureCollection = require('../models/featureCollection');
+const Feature = require('../models/feature');
 const bodyParser = require('body-parser');
 const featureCollection = require('../models/featureCollection');
 
@@ -10,13 +11,28 @@ module.exports = router;
 
 // Post Method
 router.post('/post/geoJSON', bodyParser.json(), async (req, res) => {
+    const featureIds = [];
+    await Promise.all(req.body.features.map(async element => {
+        const feature = new Feature({
+            type: element.type,
+            geometry: element.geometry,
+            properties: element.properties
+        });
+        try {
+            const featureData = await feature.save();
+            featureIds.push(featureData._id);
+        } catch (error) {
+            res.status(400).json({ message: error.message });
+        }
+    }));
+
     const featureCollection = new FeatureCollection({
         type: req.body.type,
         name: req.body.name,
         crs: req.body.crs,
-        features: req.body.features
+        featureIds: featureIds
     })
-
+    
     try {
         featureCollection.markModified('features');
         const dataToSave = await featureCollection.save();
@@ -41,9 +57,9 @@ router.get('/getOne/:id', async (req, res) => {
 // Get within polygon
 router.get('/getWithinPolygon', bodyParser.json(), async (req, res) => {
     try {
-        console.log(req.body.coordinates);
+        // const data = await FeatureCollection.find({'features.geometry': {type: "Point"}});
         const data = await FeatureCollection.find({
-            geometry: {
+            "features.geometry": {
                 $geoWithin: {
                     $geometry: {
                         type: "Polygon",
@@ -116,6 +132,10 @@ router.patch('/update/:id', bodyParser.json(), async (req, res) => {
 router.delete('/delete/:id', async (req, res) => {
     try {
         const id = req.params.id;
+        const featureCollection = await FeatureCollection.findById(id);
+        featureCollections.features.forEach(async feature => {
+            await Feature.findByIdAndDelete(feature);
+        });
         const data = await FeatureCollection.findByIdAndDelete(id)
         res.send(`Document with ${data.name} has been deleted..`)
     }
@@ -127,7 +147,8 @@ router.delete('/delete/:id', async (req, res) => {
 //Delete all method
 router.delete('/deleteAll', async (req, res) => {
     try {
-        const data = await FeatureCollection.deleteMany({})
+        const deleteCollections = await FeatureCollection.deleteMany({})
+        const deleteFeatures = await Feature.deleteMany({})
         res.send(`All documents deleted..`)
     }
     catch (error) {
