@@ -43,42 +43,57 @@ router.post('/post/geoJSON', bodyParser.json(), async (req, res) => {
     }
 })
 
-//Get by ID Method
-router.get('/getOne/:id', async (req, res) => {
+//Get collection by ID Method
+router.get('/getOne/featureCollection/:id', async (req, res) => {
     try{
         const data = await featureCollection.findById(req.params.id);
+        const features = await GetFeaturesByCollectionId(req.params.id);
+        data.features = features;
+        
+        res.json(data);
+    }
+    catch(error){
+        res.status(500).json({message: error.message});
+    }
+});
+
+// Get feature by ID Method
+router.get('/getOne/feature/:id', async (req, res) => {
+    try{
+        const data = await Feature.findById(req.params.id);
         res.json(data)
     }
     catch(error){
         res.status(500).json({message: error.message})
     }
-})
+});
 
-// Get within polygon
+// Get features within polygon
 router.get('/getWithinPolygon', bodyParser.json(), async (req, res) => {
     try {
         // const data = await FeatureCollection.find({'features.geometry': {type: "Point"}});
-        const data = await FeatureCollection.find({
-            "features.geometry": {
+        const features = await Feature.find({
+            geometry: {
                 $geoWithin: {
                     $geometry: {
                         type: "Polygon",
-                        coordinates: [
-                            [
-                              [ -79.98722229310701, 40.42978391567601 ],
-                              [ -79.91434750413637, 40.42499418164428 ],
-                              [ -79.91648576879827, 40.45290438768224 ],
-                              [ -79.96842075038268, 40.46851922166161 ],
-                              [ -80.011985300597, 40.46572823447352 ],
-                              [ -80.01702961693753, 40.429085777483834 ],
-                              [ -79.98722229310701, 40.42978391567601 ]
-                            ]
-                          ],
+                        coordinates: req.body.coordinates,
                     }
                 }
             }
         });
-        res.json(data);
+        const featureCollection = new FeatureCollection({
+            type: "FeatureCollection",
+            name: "Within Polygon",
+            crs: {
+                type: "name",
+                properties: {
+                    name: "urn:ogc:def:crs:EPSG::4326"
+                }
+            },
+            features: features
+        });
+        res.json(featureCollection);
     } catch (error) {
         res.status(500).json({ message: error.message });
     }
@@ -90,10 +105,10 @@ router.get('/featureCollections', async (req, res) => {
         const featureCollections = await FeatureCollection.find();
         var allFeatures = [];
         featureCollections.forEach(featureCollection => {
-            featureCollection.features.forEach(feature => {
+            featureCollection.featureIds.forEach(featureId => {
+                const feature = Feature.findById(featureId);
                 allFeatures.push(feature);
             });
-            // allFeatures.push(featureCollection.features);
         });
 
         if (allFeatures.length == 0) { res.json({ message: "No features found" }) }
@@ -110,7 +125,17 @@ router.get('/featureCollections', async (req, res) => {
     }
 });
 
-//Update by ID Method
+// Get all features
+router.get('/features', async (req, res) => {
+    try {
+        const features = await Feature.find();
+        res.json(features);
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+});
+
+//Update collection by ID Method
 router.patch('/update/:id', bodyParser.json(), async (req, res) => {
     try {
         const id = req.params.id;
@@ -133,7 +158,7 @@ router.delete('/delete/:id', async (req, res) => {
     try {
         const id = req.params.id;
         const featureCollection = await FeatureCollection.findById(id);
-        featureCollections.features.forEach(async feature => {
+        featureCollection.featureIds.forEach(async feature => {
             await Feature.findByIdAndDelete(feature);
         });
         const data = await FeatureCollection.findByIdAndDelete(id)
@@ -155,3 +180,18 @@ router.delete('/deleteAll', async (req, res) => {
         res.status(400).json({ message: error.message })
     }
 })
+
+// Find all features of a collection
+GetFeaturesByCollectionId = async (id) => {
+    try {
+        const featureCollection = await FeatureCollection.findById(id);
+        var features = [];
+        for (const featureId of featureCollection.featureIds) {
+            // const feature = await Feature.findById(featureId);
+            features.push(await Feature.findById(featureId));
+        }
+        return features;
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+}

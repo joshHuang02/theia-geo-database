@@ -1,5 +1,6 @@
 const { ObjectId } = require('mongodb');
 const mongoose = require('mongoose');
+const Feature = require('./feature');
 
 const crsSchema = new mongoose.Schema({
   type: {
@@ -30,6 +31,10 @@ const featureCollectionSchema = new mongoose.Schema({
   featureIds: {
     type: [ObjectId],
     required: true
+  },
+  features: {
+    type: [Feature.schema],
+    required: false
   }
 });
 
