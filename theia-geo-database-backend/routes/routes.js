@@ -1,74 +1,31 @@
 const express = require('express');
-// const Model = require('../models/model');
 const FeatureCollection = require('../models/featureCollection');
 const Feature = require('../models/feature');
 const bodyParser = require('body-parser');
-const featureCollection = require('../models/featureCollection');
+// const { ObjectId } = require('mongodb');
+const geoJson = require('../middleware/geoJson');
+// const featureCollection = require('../models/featureCollection');
 
 const router = express.Router()
 
 module.exports = router;
 
-// Post Method
+// Post geoJSON Method
 router.post('/post/geoJSON', bodyParser.json(), async (req, res) => {
-    const featureIds = [];
-    await Promise.all(req.body.features.map(async element => {
-        const feature = new Feature({
-            type: element.type,
-            geometry: element.geometry,
-            properties: element.properties
-        });
-        try {
-            const featureData = await feature.save();
-            featureIds.push(featureData._id);
-        } catch (error) {
-            res.status(400).json({ message: error.message });
-        }
-    }));
+    await geoJson.post(req, res);
+});
 
-    const featureCollection = new FeatureCollection({
-        type: req.body.type,
-        name: req.body.name,
-        crs: req.body.crs,
-        featureIds: featureIds
-    })
-    
-    try {
-        featureCollection.markModified('features');
-        const dataToSave = await featureCollection.save();
-        res.status(200).json(dataToSave)
-    }
-    catch (error) {
-        res.status(400).json({message: error.message})
-    }
-})
-
-//Get collection by ID Method
+//Get geoJSON collection by ID Method
 router.get('/getOne/featureCollection/:id', async (req, res) => {
-    try{
-        const data = await featureCollection.findById(req.params.id);
-        const features = await GetFeaturesByCollectionId(req.params.id);
-        data.features = features;
-        
-        res.json(data);
-    }
-    catch(error){
-        res.status(500).json({message: error.message});
-    }
+    await geoJson.getCollectionById(req, res);
 });
 
-// Get feature by ID Method
+// Get geoJSON feature by ID Method
 router.get('/getOne/feature/:id', async (req, res) => {
-    try{
-        const data = await Feature.findById(req.params.id);
-        res.json(data)
-    }
-    catch(error){
-        res.status(500).json({message: error.message})
-    }
+    
 });
 
-// Get features within polygon
+// Get geoJSON features within polygon
 router.get('/getWithinPolygon', bodyParser.json(), async (req, res) => {
     try {
         // const data = await FeatureCollection.find({'features.geometry': {type: "Point"}});
@@ -142,7 +99,7 @@ router.patch('/update/:id', bodyParser.json(), async (req, res) => {
         const updatedData = req.body;
         const options = { new: true };
 
-        const result = await featureCollection.findByIdAndUpdate(
+        const result = await FeatureCollection.findByIdAndUpdate(
             id, updatedData, options
         )
 
