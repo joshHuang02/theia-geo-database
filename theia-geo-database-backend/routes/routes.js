@@ -12,12 +12,14 @@ module.exports = router;
 
 // Post geoJSON Method
 router.post('/post/geoJSON', bodyParser.json(), async (req, res) => {
-    await geoJson.post(req, res);
+    const data = await geoJson.post(req, res);
+    res.status(data[0]).json(data[1]);
 });
 
 //Get geoJSON collection by ID Method
 router.get('/getOne/featureCollection/:id', async (req, res) => {
-    await geoJson.getCollectionById(req, res);
+    const data = await geoJson.getCollectionById(req, res);
+    res.status(data[0]).json(data[1]);
 });
 
 // Get geoJSON feature by ID Method
@@ -137,18 +139,3 @@ router.delete('/deleteAll', async (req, res) => {
         res.status(400).json({ message: error.message })
     }
 })
-
-// Find all features of a collection
-GetFeaturesByCollectionId = async (id) => {
-    try {
-        const featureCollection = await FeatureCollection.findById(id);
-        var features = [];
-        for (const featureId of featureCollection.featureIds) {
-            // const feature = await Feature.findById(featureId);
-            features.push(await Feature.findById(featureId));
-        }
-        return features;
-    } catch (error) {
-        res.status(500).json({ message: error.message });
-    }
-}
