@@ -12,50 +12,25 @@ module.exports = router;
 
 // Post geoJSON Method
 router.post('/post/geoJSON', bodyParser.json(), async (req, res) => {
-    const data = await geoJson.post(req, res);
+    const data = await geoJson.postCollection(req);
     res.status(data[0]).json(data[1]);
 });
 
 //Get geoJSON collection by ID Method
 router.get('/getOne/featureCollection/:id', async (req, res) => {
-    const data = await geoJson.getCollectionById(req, res);
+    const data = await geoJson.getCollectionById(req);
     res.status(data[0]).json(data[1]);
 });
 
 // Get geoJSON feature by ID Method
 router.get('/getOne/feature/:id', async (req, res) => {
-    
+    const data = await geoJson.getFeatureById(req);
+    res.status(data[0]).json(data[1]);
 });
 
 // Get geoJSON features within polygon
 router.get('/getWithinPolygon', bodyParser.json(), async (req, res) => {
-    try {
-        // const data = await FeatureCollection.find({'features.geometry': {type: "Point"}});
-        const features = await Feature.find({
-            geometry: {
-                $geoWithin: {
-                    $geometry: {
-                        type: "Polygon",
-                        coordinates: req.body.coordinates,
-                    }
-                }
-            }
-        });
-        const featureCollection = new FeatureCollection({
-            type: "FeatureCollection",
-            name: "Within Polygon",
-            crs: {
-                type: "name",
-                properties: {
-                    name: "urn:ogc:def:crs:EPSG::4326"
-                }
-            },
-            features: features
-        });
-        res.json(featureCollection);
-    } catch (error) {
-        res.status(500).json({ message: error.message });
-    }
+    
 });
 
 // Get all feature collections

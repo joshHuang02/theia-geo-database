@@ -3,7 +3,7 @@ const ObjectId = mongoose.Types.ObjectId;
 const FeatureCollection = require('../models/featureCollection');
 const Feature = require('../models/feature');
 
-post = async (req) => {
+postCollection = async (req) => {
 	const featureIds = [];
 	await Promise.all(req.body.features.map(async element => {
 		const feature = new Feature({
@@ -36,7 +36,7 @@ post = async (req) => {
 	}
 }
 
-getCollectionById = async (req, res) => {
+getCollectionById = async (req) => {
 	try{
 		if (!ObjectId.isValid(req.params.id)) return [400, "Invalid feature collection ID."];
 
@@ -47,6 +47,7 @@ getCollectionById = async (req, res) => {
 		try {
 			for (const featureId of collection.featureIds) {
 				features.push(await Feature.findById(featureId));
+				// may want to add error message if feature not found, but that should never happen since features are never deleted separately from its feature collection
 			}
         } catch(error) {
 			return [500, error.message];
@@ -59,16 +60,45 @@ getCollectionById = async (req, res) => {
     }
 }
 
-getFeatureById = async (req, res) => {
+getFeatureById = async (req) => {
 	try{
 		if (!ObjectId.isValid(req.params.id)) return [400, "Invalid feature ID"];
 
-        const data = await Feature.findById(req.params.id);
-		if (!data) return [400, "Feature not found."];
+        const feature = await Feature.findById(req.params.id);
+		if (!feature) return [404, "Feature not found."];
 
-        res.json(data)
+        return [200, feature]
     }
     catch(error){
+		return [500, error.message];
+    }
+}
+
+GetFeaturesWitinPolygon = async (req) => {
+	try {
+        const features = await Feature.find({
+            geometry: {
+                $geoWithin: {
+                    $geometry: {
+                        type: "Polygon",
+                        coordinates: req.body.coordinates,
+                    }
+                }
+            }
+        });
+        const featureCollection = new FeatureCollection({
+            type: "FeatureCollection",
+            name: "Within Polygon",
+            crs: {
+                type: "name",
+                properties: {
+                    name: "urn:ogc:def:crs:EPSG::4326"
+                }
+            },
+            features: features
+        });
+		return [200, featureCollection];
+    } catch (error) {
 		return [500, error.message];
     }
 }
@@ -87,4 +117,4 @@ GetFeaturesByCollectionId = async (id) => {
     }
 }
 
-module.exports = {post, getCollectionById};
+module.exports = {postCollection, getCollectionById, getFeatureById};
