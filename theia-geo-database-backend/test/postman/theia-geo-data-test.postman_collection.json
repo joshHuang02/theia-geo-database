@@ -1,0 +1,435 @@
+{
+	"info": {
+		"_postman_id": "d7d778a2-5234-4452-9370-3ae876ca1168",
+		"name": "theia-geo-data-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31045539"
+	},
+	"item": [
+		{
+			"name": "Post geoJSON CMU",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"FeatureCollection\",\n    \"features\": [\n      {\n        \"type\": \"Feature\",\n        \"geometry\": {\n          \"type\": \"Point\",\n          \"coordinates\": [ -122.0822035425683, 37.42228990140251, 0 ]\n        },\n        \"properties\": {\n          \"name\": \"Simple placemark\",\n          \"description\": \"Attached to the ground. Intelligently places itself at the height of the underlying terrain.\"\n        }\n      }\n    ]\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/post/geoJSON",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"post",
+						"geoJSON"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post geoJSON point (SF)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"FeatureCollection\",\n    \"features\": [\n      {\n        \"type\": \"Feature\",\n        \"geometry\": {\n          \"type\": \"Point\",\n          \"coordinates\": [ -122.0822035425683, 37.42228990140251, 0 ]\n        },\n        \"properties\": {\n          \"name\": \"Simple placemark\",\n          \"description\": \"Attached to the ground. Intelligently places itself at the height of the underlying terrain.\"\n        }\n      }\n    ]\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/post/geoJSON",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"post",
+						"geoJSON"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post geoJSON Schenley Park",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"FeatureCollection\",\n    \"features\": [\n      {\n        \"type\": \"Feature\",\n        \"geometry\": {\n          \"type\": \"Point\",\n          \"coordinates\": [ -122.0822035425683, 37.42228990140251, 0 ]\n        },\n        \"properties\": {\n          \"name\": \"Simple placemark\",\n          \"description\": \"Attached to the ground. Intelligently places itself at the height of the underlying terrain.\"\n        }\n      }\n    ]\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/post/geoJSON",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"post",
+						"geoJSON"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post geoJSON Streets and Phipps",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"FeatureCollection\",\n    \"features\": [\n      {\n        \"type\": \"Feature\",\n        \"geometry\": {\n          \"type\": \"Point\",\n          \"coordinates\": [ -122.0822035425683, 37.42228990140251, 0 ]\n        },\n        \"properties\": {\n          \"name\": \"Simple placemark\",\n          \"description\": \"Attached to the ground. Intelligently places itself at the height of the underlying terrain.\"\n        }\n      }\n    ]\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/post/geoJSON",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"post",
+						"geoJSON"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get collection by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/featureCollections",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"featureCollections"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get feature by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/featureCollections",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"featureCollections"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all collections",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/featureCollections",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"featureCollections"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all features",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/featureCollections",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"featureCollections"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get within polygon",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"coordinates\": [\n          [\n            [\n              -79.98722229310701,\n              40.42978391567601\n            ],\n            [\n              -79.91434750413637,\n              40.42499418164428\n            ],\n            [\n              -79.91648576879827,\n              40.45290438768224\n            ],\n            [\n              -79.96842075038268,\n              40.46851922166161\n            ],\n            [\n              -80.011985300597,\n              40.46572823447352\n            ],\n            [\n              -80.01702961693753,\n              40.429085777483834\n            ],\n            [\n              -79.98722229310701,\n              40.42978391567601\n            ]\n          ]\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/getFeaturesWithinPolygon",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"getFeaturesWithinPolygon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update feature by ID",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/update/6557ca3e0ddec3e6e43ae701",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"update",
+						"6557ca3e0ddec3e6e43ae701"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Joshua\",\n    \"age\": 23\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/deleteFeatureCollection/656509d0c75d94ab23f48740",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"deleteFeatureCollection",
+						"656509d0c75d94ab23f48740"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete feature by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Joshua\",\n    \"age\": 23\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/deleteFeatureCollection/656509d0c75d94ab23f48740",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"deleteFeatureCollection",
+						"656509d0c75d94ab23f48740"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete All",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Joshua\",\n    \"age\": 23\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/deleteAll",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"deleteAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Miles\",\n    \"age\" : 999\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/post",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/getOne/2 Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/getAll",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/getOne/2 Copy 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/getOne/654c3d5adbcda3e224523d88",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"getOne",
+						"654c3d5adbcda3e224523d88"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/update/",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Joshua\",\n    \"age\": 23\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/update/654c3d5adbcda3e224523d88",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"update",
+						"654c3d5adbcda3e224523d88"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
