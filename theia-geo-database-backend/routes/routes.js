@@ -92,7 +92,7 @@ router.patch('/updateFeature/:id', bodyParser.json(), async (req, res) => {
     }
 });
 
-//Delete by ID Method
+//Delete feature collection by ID Method
 router.delete('/deleteFeatureCollection/:id', async (req, res) => {
     try {
         const id = req.params.id;
@@ -104,9 +104,30 @@ router.delete('/deleteFeatureCollection/:id', async (req, res) => {
         featureCollection.featureIds.forEach(async feature => {
             await Feature.findByIdAndDelete(feature);
         });
-        
+
         const data = await FeatureCollection.findByIdAndDelete(id)
         res.send(`Document with ${data.name} has been deleted..`)
+    }
+    catch (error) {
+        res.status(500).json({ message: error.message })
+    }
+})
+
+// Delete feature by ID Method
+router.delete('/deleteFeature/:id', async (req, res) => {
+    try {
+        const id = req.params.id;
+        if (!ObjectId.isValid(id)) res.status(400).json({ message: "Invalid feature ID" });
+
+        var featureCollection = await FeatureCollection.findOne({ featureIds: id });
+        featureCollection.featureIds = featureCollection.featureIds.filter(featureId => featureId != id);
+        featureCollection.markModified('featureIds');
+        await featureCollection.save();
+
+        const data = await Feature.findByIdAndDelete(id)
+        if (!data) res.status(404).json({ message: "Feature not found" });
+
+        res.send('Feature deleted..')
     }
     catch (error) {
         res.status(500).json({ message: error.message })
