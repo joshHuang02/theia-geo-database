@@ -96,15 +96,20 @@ router.patch('/updateFeature/:id', bodyParser.json(), async (req, res) => {
 router.delete('/deleteFeatureCollection/:id', async (req, res) => {
     try {
         const id = req.params.id;
+        if (!ObjectId.isValid(id)) res.status(400).json({ message: "Invalid feature collection ID" });
+
         const featureCollection = await FeatureCollection.findById(id);
+        if (!featureCollection) res.status(404).json({ message: "Feature collection not found" });
+
         featureCollection.featureIds.forEach(async feature => {
             await Feature.findByIdAndDelete(feature);
         });
+        
         const data = await FeatureCollection.findByIdAndDelete(id)
         res.send(`Document with ${data.name} has been deleted..`)
     }
     catch (error) {
-        res.status(400).json({ message: error.message })
+        res.status(500).json({ message: error.message })
     }
 })
 
@@ -116,6 +121,6 @@ router.delete('/deleteAll', async (req, res) => {
         res.send(`All documents deleted..`)
     }
     catch (error) {
-        res.status(400).json({ message: error.message })
+        res.status(500).json({ message: error.message })
     }
 })

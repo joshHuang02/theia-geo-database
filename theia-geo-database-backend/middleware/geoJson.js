@@ -138,18 +138,4 @@ getFeaturesWitinPolygon = async (req) => {
     }
 }
 
-// Find all features of a collection
-GetFeaturesByCollectionId = async (id) => {
-    try {
-        const featureCollection = await FeatureCollection.findById(id);
-        var features = [];
-        for (const featureId of featureCollection.featureIds) {
-            features.push(await Feature.findById(featureId));
-        }
-        return features;
-    } catch (error) {
-		return [500, error.message];
-    }
-}
-
 module.exports = {postCollection, getCollectionById, getFeatureById, getAllFeatures, getFeaturesWitinPolygon, getAllCollections};
