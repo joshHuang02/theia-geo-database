@@ -4,6 +4,7 @@ const Feature = require('../models/feature');
 const bodyParser = require('body-parser');
 // const { ObjectId } = require('mongodb');
 const geoJson = require('../middleware/geoJson');
+const { ObjectId } = require('mongodb');
 // const featureCollection = require('../models/featureCollection');
 
 const router = express.Router()
@@ -47,25 +48,52 @@ router.get('/getFeaturesWithinPolygon', bodyParser.json(), async (req, res) => {
 });
 
 //Update collection by ID Method
+// Will not implement this route due to the way features and featureCollections are stored separately in the database, as well as the fact that collections are only uploaded as a whole document and usually does not require updating individual features.
+// Instead, delete the old collection and upload a new one.
 router.patch('/update/:id', bodyParser.json(), async (req, res) => {
+    res.status(400).json({ message: "Delete the old collection and upload a new one" })
+    // try {
+    //     const id = req.params.id;
+    //     const updatedData = req.body;
+    //     const options = { new: true };
+
+    //     const result = await FeatureCollection.findByIdAndUpdate(
+    //         id, updatedData, options
+    //     )
+
+    //     res.send(result)
+    // }
+    // catch (error) {
+    //     res.status(400).json({ message: error.message })
+    // }
+})
+
+/* Update feature by ID Method
+   This route is only for debugging, as individual features are not meant to be updated.
+*/
+router.patch('/updateFeature/:id', bodyParser.json(), async (req, res) => {
     try {
+        if (!ObjectId.isValid(req.params.id)) res.status(400).json({ message: "Invalid feature ID" })
+
         const id = req.params.id;
         const updatedData = req.body;
         const options = { new: true };
 
-        const result = await FeatureCollection.findByIdAndUpdate(
+        const result = await Feature.findByIdAndUpdate(
             id, updatedData, options
         )
+
+        if (!result) res.status(404).json({ message: "Feature not found" })
 
         res.send(result)
     }
     catch (error) {
-        res.status(400).json({ message: error.message })
+        res.status(500).json({ message: error.message })
     }
-})
+});
 
 //Delete by ID Method
-router.delete('/delete/:id', async (req, res) => {
+router.delete('/deleteFeatureCollection/:id', async (req, res) => {
     try {
         const id = req.params.id;
         const featureCollection = await FeatureCollection.findById(id);
