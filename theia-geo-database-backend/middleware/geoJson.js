@@ -106,8 +106,6 @@ getAllFeatures = async () => {
 	}
 }
 
-
-
 getFeaturesWitinPolygon = async (req) => {
 	try {
         const features = await Feature.find({

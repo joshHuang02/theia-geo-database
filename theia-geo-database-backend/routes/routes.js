@@ -28,11 +28,6 @@ router.get('/getOne/feature/:id', async (req, res) => {
     res.status(data[0]).json(data[1]);
 });
 
-// Get geoJSON features within polygon
-router.get('/getFeaturesWithinPolygon', bodyParser.json(), async (req, res) => {
-    const data = await geoJson.GetFeaturesWitinPolygon(req);
-});
-
 // Get all feature collections
 router.get('/featureCollections', async (req, res) => {
     const data = await geoJson.getAllCollections();
@@ -42,6 +37,12 @@ router.get('/featureCollections', async (req, res) => {
 // Get all features
 router.get('/features', async (req, res) => {
     const data = await geoJson.getAllFeatures();
+    res.status(data[0]).json(data[1]);
+});
+
+// Get geoJSON features within polygon
+router.get('/getFeaturesWithinPolygon', bodyParser.json(), async (req, res) => {
+    const data = await geoJson.getFeaturesWitinPolygon(req);
     res.status(data[0]).json(data[1]);
 });
 
