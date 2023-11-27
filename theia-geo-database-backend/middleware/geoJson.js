@@ -60,6 +60,22 @@ getCollectionById = async (req) => {
     }
 }
 
+getAllCollections = async () => {
+	try {
+        const featureCollections = await FeatureCollection.find();
+		if (!featureCollections) return [404, "No feature collections found."];
+		return [200, featureCollections];
+
+        // if (allFeatures.length == 0) { res.json({ message: "No features found" }) }
+
+        
+        //     res.json(newCollection);
+    } catch (error) {
+		return [500, error.message];
+        // res.status(500).json({ message: error.message });
+    }
+}
+
 getFeatureById = async (req) => {
 	try{
 		if (!ObjectId.isValid(req.params.id)) return [400, "Invalid feature ID"];
@@ -74,7 +90,25 @@ getFeatureById = async (req) => {
     }
 }
 
-GetFeaturesWitinPolygon = async (req) => {
+getAllFeatures = async () => {
+	try {
+		const features = await Feature.find();
+
+		var newCollection = new FeatureCollection({
+            type: "FeatureCollection",
+            name: "All Features",
+            features: features
+        });
+
+		return [200, newCollection];
+	} catch (error) {
+		return [500, error.message];
+	}
+}
+
+
+
+getFeaturesWitinPolygon = async (req) => {
 	try {
         const features = await Feature.find({
             geometry: {
@@ -86,6 +120,9 @@ GetFeaturesWitinPolygon = async (req) => {
                 }
             }
         });
+
+		// no error if no features found, simply do not display any features
+		
         const featureCollection = new FeatureCollection({
             type: "FeatureCollection",
             name: "Within Polygon",
@@ -117,4 +154,4 @@ GetFeaturesByCollectionId = async (id) => {
     }
 }
 
-module.exports = {postCollection, getCollectionById, getFeatureById};
+module.exports = {postCollection, getCollectionById, getFeatureById, getAllFeatures, getFeaturesWitinPolygon, getAllCollections};

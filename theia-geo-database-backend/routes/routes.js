@@ -29,44 +29,20 @@ router.get('/getOne/feature/:id', async (req, res) => {
 });
 
 // Get geoJSON features within polygon
-router.get('/getWithinPolygon', bodyParser.json(), async (req, res) => {
-    
+router.get('/getFeaturesWithinPolygon', bodyParser.json(), async (req, res) => {
+    const data = await geoJson.GetFeaturesWitinPolygon(req);
 });
 
 // Get all feature collections
 router.get('/featureCollections', async (req, res) => {
-    try {
-        const featureCollections = await FeatureCollection.find();
-        var allFeatures = [];
-        featureCollections.forEach(featureCollection => {
-            featureCollection.featureIds.forEach(featureId => {
-                const feature = Feature.findById(featureId);
-                allFeatures.push(feature);
-            });
-        });
-
-        if (allFeatures.length == 0) { res.json({ message: "No features found" }) }
-
-        var newCollection = new FeatureCollection({
-            type: "FeatureCollection",
-            name: "All Features",
-            crs: featureCollections[0].crs,
-            features: allFeatures
-        });
-            res.json(newCollection);
-    } catch (error) {
-        res.status(500).json({ message: error.message });
-    }
+    const data = await geoJson.getAllCollections();
+    res.status(data[0]).json(data[1]);
 });
 
 // Get all features
 router.get('/features', async (req, res) => {
-    try {
-        const features = await Feature.find();
-        res.json(features);
-    } catch (error) {
-        res.status(500).json({ message: error.message });
-    }
+    const data = await geoJson.getAllFeatures();
+    res.status(data[0]).json(data[1]);
 });
 
 //Update collection by ID Method
