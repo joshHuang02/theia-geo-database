@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+	<Document>
+		<Placemark>
+			<name>Los Angeles</name>
+			<ExtendedData><Data name="name">
+					<value>Los Angeles</value>
+				</Data><Data name="styleUrl">
+					<value>#__managed_style_008CF957D42D58079A5D</value>
+				</Data><Data name="styleMapHash">
+					<value>[object Object]</value>
+				</Data></ExtendedData>
+			<Point>
+				<coordinates>-118.242643,34.0549076,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>San Antonio</name>
+			<ExtendedData><Data name="name">
+					<value>San Antonio</value>
+				</Data><Data name="styleUrl">
+					<value>#__managed_style_008CF957D42D58079A5D</value>
+				</Data><Data name="styleMapHash">
+					<value>[object Object]</value>
+				</Data></ExtendedData>
+			<Point>
+				<coordinates>-98.49459220000001,29.4251905,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cleveland</name>
+			<ExtendedData><Data name="name">
+					<value>Cleveland</value>
+				</Data><Data name="styleUrl">
+					<value>#__managed_style_008CF957D42D58079A5D</value>
+				</Data><Data name="styleMapHash">
+					<value>[object Object]</value>
+				</Data></ExtendedData>
+			<Point>
+				<coordinates>-81.6943605,41.49932,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>San Francisco</name>
+			<ExtendedData><Data name="name">
+					<value>San Francisco</value>
+				</Data><Data name="styleUrl">
+					<value>#__managed_style_008CF957D42D58079A5D</value>
+				</Data><Data name="styleMapHash">
+					<value>[object Object]</value>
+				</Data></ExtendedData>
+			<Point>
+				<coordinates>-122.4194155,37.7749295,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Miami</name>
+			<ExtendedData><Data name="name">
+					<value>Miami</value>
+				</Data><Data name="styleUrl">
+					<value>#__managed_style_008CF957D42D58079A5D</value>
+				</Data><Data name="styleMapHash">
+					<value>[object Object]</value>
+				</Data></ExtendedData>
+			<Point>
+				<coordinates>-80.1917902,25.7616798,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Portland</name>
+			<ExtendedData><Data name="name">
+					<value>Portland</value>
+				</Data><Data name="styleUrl">
+					<value>#__managed_style_008CF957D42D58079A5D</value>
+				</Data><Data name="styleMapHash">
+					<value>[object Object]</value>
+				</Data></ExtendedData>
+			<Point>
+				<coordinates>-122.6783853,45.515232,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pittsburgh</name>
+			<ExtendedData><Data name="name">
+					<value>Pittsburgh</value>
+				</Data><Data name="styleUrl">
+					<value>#__managed_style_008CF957D42D58079A5D</value>
+				</Data><Data name="styleMapHash">
+					<value>[object Object]</value>
+				</Data></ExtendedData>
+			<Point>
+				<coordinates>-79.9958864,40.44062479999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>New York</name>
+			<ExtendedData><Data name="name">
+					<value>New York</value>
+				</Data><Data name="styleUrl">
+					<value>#__managed_style_008CF957D42D58079A5D</value>
+				</Data><Data name="styleMapHash">
+					<value>[object Object]</value>
+				</Data></ExtendedData>
+			<Point>
+				<coordinates>-74.0059728,40.7127753,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Washington, D.C.</name>
+			<ExtendedData><Data name="name">
+					<value>Washington, D.C.</value>
+				</Data><Data name="styleUrl">
+					<value>#__managed_style_008CF957D42D58079A5D</value>
+				</Data><Data name="styleMapHash">
+					<value>[object Object]</value>
+				</Data></ExtendedData>
+			<Point>
+				<coordinates>-77.0368707,38.9071923,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Houston</name>
+			<ExtendedData><Data name="name">
+					<value>Houston</value>
+				</Data><Data name="styleUrl">
+					<value>#__managed_style_008CF957D42D58079A5D</value>
+				</Data><Data name="styleMapHash">
+					<value>[object Object]</value>
+				</Data></ExtendedData>
+			<Point>
+				<coordinates>-95.3698028,29.7604267,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Chicago</name>
+			<ExtendedData><Data name="name">
+					<value>Chicago</value>
+				</Data><Data name="styleUrl">
+					<value>#__managed_style_008CF957D42D58079A5D</value>
+				</Data><Data name="styleMapHash">
+					<value>[object Object]</value>
+				</Data></ExtendedData>
+			<Point>
+				<coordinates>-87.6297982,41.8781136,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Denver</name>
+			<ExtendedData><Data name="name">
+					<value>Denver</value>
+				</Data><Data name="styleUrl">
+					<value>#__managed_style_008CF957D42D58079A5D</value>
+				</Data><Data name="styleMapHash">
+					<value>[object Object]</value>
+				</Data></ExtendedData>
+			<Point>
+				<coordinates>-104.990251,39.7392358,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>St. Louis</name>
+			<ExtendedData><Data name="name">
+					<value>St. Louis</value>
+				</Data><Data name="styleUrl">
+					<value>#__managed_style_008CF957D42D58079A5D</value>
+				</Data><Data name="styleMapHash">
+					<value>[object Object]</value>
+				</Data></ExtendedData>
+			<Point>
+				<coordinates>-90.19940419999999,38.6270025,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<description>&lt;div&gt;General outline of the CMU main campus in Pittsburgh&lt;/div&gt;</description>
+			<ExtendedData><Data name="Name">
+					<value>CMU</value>
+				</Data><Data name="description">
+					<value>&lt;div&gt;General outline of the CMU main campus in Pittsburgh&lt;/div&gt;</value>
+				</Data></ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>-79.9447858276481,40.4462025365302 -79.9456577365265,40.4450300841763
+							-79.9462868841006,40.4450097721143 -79.9463056568079,40.4444840677536
+							-79.9467074328034,40.4444823929456 -79.947760079799,40.4415333269164
+							-79.9411662147616,40.4402962686587 -79.9406362244887,40.4414803981172
+							-79.9402767268592,40.441456349156 -79.9376155862952,40.4426117533134
+							-79.9387825203721,40.4438691359688 -79.9385171886597,40.4445600004418
+							-79.9408362681716,40.4449304360267 -79.9414404246011,40.4451203617314
+							-79.9408168676478,40.4460284622529 -79.9423152398134,40.4460204378047
+							-79.9425214559406,40.4473971746185 -79.945020997616,40.4471757967921
+							-79.9447858276481,40.4462025365302</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<ExtendedData><Data name="Name">
+					<value>Hamburg Hall</value>
+				</Data><Data name="description">
+					<value></value>
+				</Data></ExtendedData>
+			<Point>
+				<coordinates>-79.9455301225626,40.4442917144413</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Simple placemark</name>
+			<description>Attached to the ground. Intelligently places itself at the height of the underlying terrain.
+			</description>
+			<ExtendedData><Data name="name">
+					<value>Simple placemark</value>
+				</Data><Data name="description">
+					<value>Attached to the ground. Intelligently places itself at the height of the underlying terrain.
+					</value>
+				</Data></ExtendedData>
+			<Point>
+				<coordinates>-122.0822035425683,37.42228990140251,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Schenley Park</name>
+			<ExtendedData><Data name="name">
+					<value>Schenley Park</value>
+				</Data></ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>-79.94739952280196,40.44149527585791,0 -79.94981381481117,40.43939458759966,0
+							-79.94953427466288,40.42940740966852,0 -79.94840547561938,40.42815246562844,0
+							-79.94268083942991,40.42964246095007,0 -79.93740598233732,40.42865052330058,0
+							-79.93188260189463,40.42965573445071,0 -79.93320216741783,40.43413071055511,0
+							-79.93495390345056,40.43893154534396,0 -79.94739952280196,40.44149527585791,0</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<ExtendedData><Data name="Name">
+					<value>Fifth Ave</value>
+				</Data></ExtendedData>
+			<LineString>
+				<coordinates>-79.9466807476317,40.4470758371385 -79.9515838509049,40.4467253472142
+					-79.9613326968446,40.4396717361398 -79.9632528017961,40.4382525759015</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<ExtendedData><Data name="Name">
+					<value>New Forbes Ave</value>
+				</Data></ExtendedData>
+			<LineString>
+				<coordinates>-79.9624125813503,40.4375582779674 -79.955348536462,40.4427415342107
+					-79.9486744911093,40.4444451315054 -79.9451170552041,40.4446355682777</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<ExtendedData><Data name="Name">
+					<value>Phipps</value>
+				</Data></ExtendedData>
+			<Point>
+				<coordinates>-79.9479565224329,40.4388906102877</coordinates>
+			</Point>
+		</Placemark>
+	</Document>
+</kml>

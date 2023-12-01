@@ -13,7 +13,7 @@ module.exports = router;
 
 // Post geoJSON Method
 router.post('/post/geoJSON', bodyParser.json(), async (req, res) => {
-    const data = await geoJson.postCollection(req);
+    const data = await geoJson.postCollection(req.body);
     res.status(data[0]).json(data[1]);
 });
 
@@ -33,13 +33,22 @@ router.get('/getOne/featureCollection/:id', async (req, res) => {
     res.status(data[0]).json(data[1]);
 });
 
-// Get geoJSON feature by ID Method
+// Get kml collection by ID Method
+router.get('/getOne/kmlCollection/:id', async (req, res) => {
+    const data = await geoJson.getCollectionById(req);
+    if (data[0] != 200) res.status(data[0]).json(data[1]);
+
+    const geoJsonToKml = await kmlConverter.convertToKML(data[1]);
+    res.status(geoJsonToKml[0]).send(geoJsonToKml[1]);
+});
+
+// Get geoJSON feature by ID Method, does not have a kml equivalent
 router.get('/getOne/feature/:id', async (req, res) => {
     const data = await geoJson.getFeatureById(req);
     res.status(data[0]).json(data[1]);
 });
 
-// Get all feature collections
+// Get all feature collections, does not have a kml equivalent
 router.get('/featureCollections', async (req, res) => {
     const data = await geoJson.getAllCollections();
     res.status(data[0]).json(data[1]);
@@ -49,6 +58,15 @@ router.get('/featureCollections', async (req, res) => {
 router.get('/features', async (req, res) => {
     const data = await geoJson.getAllFeatures();
     res.status(data[0]).json(data[1]);
+});
+
+// Get all features in KML file
+router.get('/features/kml', async (req, res) => {
+    const data = await geoJson.getAllFeatures();
+    if (data[0] != 200) res.status(data[0]).json(data[1]);
+
+    const geoJsonToKml = await kmlConverter.convertToKML(data[1]);
+    res.status(geoJsonToKml[0]).send(geoJsonToKml[1]);
 });
 
 // Get geoJson features withing circle
