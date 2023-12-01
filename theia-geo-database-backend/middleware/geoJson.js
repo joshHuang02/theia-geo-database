@@ -4,11 +4,11 @@ const gjv = require("geojson-validation");
 const FeatureCollection = require('../models/featureCollection');
 const Feature = require('../models/feature');
 
-postCollection = async (req) => {
-	if (!gjv.valid(req.body)) return [400, "Invalid geoJSON."];
-	
+postCollection = async (geoJson) => {
+	if (!gjv.valid(geoJson)) return [400, "Invalid geoJSON."];
+
 	const featureIds = [];
-	await Promise.all(req.body.features.map(async element => {
+	await Promise.all(geoJson.features.map(async element => {
 		const feature = new Feature({
 			type: element.type,
 			geometry: element.geometry,
@@ -23,9 +23,9 @@ postCollection = async (req) => {
 	}));
 
 	const featureCollection = new FeatureCollection({
-		type: req.body.type,
-		name: req.body.name,
-		crs: req.body.crs,
+		type: geoJson.type,
+		name: geoJson.name,
+		crs: geoJson.crs,
 		featureIds: featureIds
 	})
 	

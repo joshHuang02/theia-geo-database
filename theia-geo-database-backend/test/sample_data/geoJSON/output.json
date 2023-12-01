@@ -1,65 +1,42 @@
 {
+    "_id": "65693a6065d013f8332fe886",
     "type": "FeatureCollection",
+    "featureIds": [
+        "65693a6065d013f8332fe874",
+        "65693a6065d013f8332fe86f",
+        "65693a6065d013f8332fe872",
+        "65693a6065d013f8332fe873",
+        "65693a6065d013f8332fe878",
+        "65693a6065d013f8332fe870",
+        "65693a6065d013f8332fe86e",
+        "65693a6065d013f8332fe86d",
+        "65693a6065d013f8332fe871",
+        "65693a6065d013f8332fe86c",
+        "65693a6065d013f8332fe875",
+        "65693a6065d013f8332fe876",
+        "65693a6065d013f8332fe877"
+    ],
     "features": [
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -74.0059728,
-                    40.7127753,
+                    -122.6783853,
+                    45.515232,
                     0
                 ]
             },
             "properties": {
-                "name": "New York",
+                "name": "Portland",
                 "styleUrl": "#__managed_style_008CF957D42D58079A5D",
                 "styleMapHash": {
                     "normal": "#__managed_style_17779FD9012D58079A5D",
                     "highlight": "#__managed_style_22853032FC2D58079A5D"
                 }
             },
-            "id": "0734A1CD6A2D58079A52"
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -79.9958864,
-                    40.44062479999999,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Pittsburgh",
-                "styleUrl": "#__managed_style_008CF957D42D58079A5D",
-                "styleMapHash": {
-                    "normal": "#__managed_style_17779FD9012D58079A5D",
-                    "highlight": "#__managed_style_22853032FC2D58079A5D"
-                }
-            },
-            "id": "084A021F7B2D58086B25"
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -81.6943605,
-                    41.49932,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Cleveland",
-                "styleUrl": "#__managed_style_008CF957D42D58079A5D",
-                "styleMapHash": {
-                    "normal": "#__managed_style_17779FD9012D58079A5D",
-                    "highlight": "#__managed_style_22853032FC2D58079A5D"
-                }
-            },
-            "id": "09E5CE3FFF2D5809130E"
+            "_id": "65693a6065d013f8332fe874",
+            "__v": 0
         },
         {
             "type": "Feature",
@@ -79,47 +56,8 @@
                     "highlight": "#__managed_style_22853032FC2D58079A5D"
                 }
             },
-            "id": "08800E81BD2D5809485E"
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -98.49459220000001,
-                    29.4251905,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "San Antonio",
-                "styleUrl": "#__managed_style_008CF957D42D58079A5D",
-                "styleMapHash": {
-                    "normal": "#__managed_style_17779FD9012D58079A5D",
-                    "highlight": "#__managed_style_22853032FC2D58079A5D"
-                }
-            },
-            "id": "06DB1B8F552D58098090"
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -118.242643,
-                    34.0549076,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Los Angeles",
-                "styleUrl": "#__managed_style_008CF957D42D58079A5D",
-                "styleMapHash": {
-                    "normal": "#__managed_style_17779FD9012D58079A5D",
-                    "highlight": "#__managed_style_22853032FC2D58079A5D"
-                }
-            },
-            "id": "0A32F7EED02D5809B71E"
+            "_id": "65693a6065d013f8332fe86f",
+            "__v": 0
         },
         {
             "type": "Feature",
@@ -139,7 +77,8 @@
                     "highlight": "#__managed_style_22853032FC2D58079A5D"
                 }
             },
-            "id": "03ADAE28832D5809EA3C"
+            "_id": "65693a6065d013f8332fe872",
+            "__v": 0
         },
         {
             "type": "Feature",
@@ -159,87 +98,8 @@
                     "highlight": "#__managed_style_22853032FC2D58079A5D"
                 }
             },
-            "id": "02A04B3D0A2D580A2755"
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -122.6783853,
-                    45.515232,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Portland",
-                "styleUrl": "#__managed_style_008CF957D42D58079A5D",
-                "styleMapHash": {
-                    "normal": "#__managed_style_17779FD9012D58079A5D",
-                    "highlight": "#__managed_style_22853032FC2D58079A5D"
-                }
-            },
-            "id": "0BD5A226602D580A8DB6"
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -77.0368707,
-                    38.9071923,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Washington, D.C.",
-                "styleUrl": "#__managed_style_008CF957D42D58079A5D",
-                "styleMapHash": {
-                    "normal": "#__managed_style_17779FD9012D58079A5D",
-                    "highlight": "#__managed_style_22853032FC2D58079A5D"
-                }
-            },
-            "id": "0F9C9B17312D580ABAB9"
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -87.6297982,
-                    41.8781136,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Chicago",
-                "styleUrl": "#__managed_style_008CF957D42D58079A5D",
-                "styleMapHash": {
-                    "normal": "#__managed_style_17779FD9012D58079A5D",
-                    "highlight": "#__managed_style_22853032FC2D58079A5D"
-                }
-            },
-            "id": "07E176A6AD2D580B1DBD"
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -104.990251,
-                    39.7392358,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Denver",
-                "styleUrl": "#__managed_style_008CF957D42D58079A5D",
-                "styleMapHash": {
-                    "normal": "#__managed_style_17779FD9012D58079A5D",
-                    "highlight": "#__managed_style_22853032FC2D58079A5D"
-                }
-            },
-            "id": "0C482B99CC2D580BB034"
+            "_id": "65693a6065d013f8332fe873",
+            "__v": 0
         },
         {
             "type": "Feature",
@@ -259,7 +119,177 @@
                     "highlight": "#__managed_style_22853032FC2D58079A5D"
                 }
             },
-            "id": "029E4DABD42D580CD8E1"
+            "_id": "65693a6065d013f8332fe878",
+            "__v": 0
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -98.49459220000001,
+                    29.4251905,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "San Antonio",
+                "styleUrl": "#__managed_style_008CF957D42D58079A5D",
+                "styleMapHash": {
+                    "normal": "#__managed_style_17779FD9012D58079A5D",
+                    "highlight": "#__managed_style_22853032FC2D58079A5D"
+                }
+            },
+            "_id": "65693a6065d013f8332fe870",
+            "__v": 0
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.6943605,
+                    41.49932,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Cleveland",
+                "styleUrl": "#__managed_style_008CF957D42D58079A5D",
+                "styleMapHash": {
+                    "normal": "#__managed_style_17779FD9012D58079A5D",
+                    "highlight": "#__managed_style_22853032FC2D58079A5D"
+                }
+            },
+            "_id": "65693a6065d013f8332fe86e",
+            "__v": 0
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.9958864,
+                    40.44062479999999,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Pittsburgh",
+                "styleUrl": "#__managed_style_008CF957D42D58079A5D",
+                "styleMapHash": {
+                    "normal": "#__managed_style_17779FD9012D58079A5D",
+                    "highlight": "#__managed_style_22853032FC2D58079A5D"
+                }
+            },
+            "_id": "65693a6065d013f8332fe86d",
+            "__v": 0
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.242643,
+                    34.0549076,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Los Angeles",
+                "styleUrl": "#__managed_style_008CF957D42D58079A5D",
+                "styleMapHash": {
+                    "normal": "#__managed_style_17779FD9012D58079A5D",
+                    "highlight": "#__managed_style_22853032FC2D58079A5D"
+                }
+            },
+            "_id": "65693a6065d013f8332fe871",
+            "__v": 0
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.0059728,
+                    40.7127753,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "New York",
+                "styleUrl": "#__managed_style_008CF957D42D58079A5D",
+                "styleMapHash": {
+                    "normal": "#__managed_style_17779FD9012D58079A5D",
+                    "highlight": "#__managed_style_22853032FC2D58079A5D"
+                }
+            },
+            "_id": "65693a6065d013f8332fe86c",
+            "__v": 0
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.0368707,
+                    38.9071923,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Washington, D.C.",
+                "styleUrl": "#__managed_style_008CF957D42D58079A5D",
+                "styleMapHash": {
+                    "normal": "#__managed_style_17779FD9012D58079A5D",
+                    "highlight": "#__managed_style_22853032FC2D58079A5D"
+                }
+            },
+            "_id": "65693a6065d013f8332fe875",
+            "__v": 0
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.6297982,
+                    41.8781136,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Chicago",
+                "styleUrl": "#__managed_style_008CF957D42D58079A5D",
+                "styleMapHash": {
+                    "normal": "#__managed_style_17779FD9012D58079A5D",
+                    "highlight": "#__managed_style_22853032FC2D58079A5D"
+                }
+            },
+            "_id": "65693a6065d013f8332fe876",
+            "__v": 0
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -104.990251,
+                    39.7392358,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Denver",
+                "styleUrl": "#__managed_style_008CF957D42D58079A5D",
+                "styleMapHash": {
+                    "normal": "#__managed_style_17779FD9012D58079A5D",
+                    "highlight": "#__managed_style_22853032FC2D58079A5D"
+                }
+            },
+            "_id": "65693a6065d013f8332fe877",
+            "__v": 0
         }
-    ]
+    ],
+    "__v": 0
 }

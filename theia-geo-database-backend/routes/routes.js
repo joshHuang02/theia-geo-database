@@ -20,9 +20,10 @@ router.post('/post/geoJSON', bodyParser.json(), async (req, res) => {
 // Post KML Method
 // parsed as text, xml is validated during conversion to geoJSON
 router.post('/post/kml', bodyParser.text(), async (req, res) => {
-        console.log(req.body);
-    const kmlString = req.body;
-    const data = await kmlConverter.convertToGeoJSON(kmlString);
+    const kmlToGeoJson = await kmlConverter.convertToGeoJSON(req.body);
+    if (kmlToGeoJson[0] != 200) res.status(kmlToGeoJson[0]).json(kmlToGeoJson[1]);
+
+    const data = await geoJson.postCollection(kmlToGeoJson[1]);
     res.status(data[0]).json(data[1]);
 });
 
