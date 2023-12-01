@@ -2,10 +2,10 @@ const express = require('express');
 const FeatureCollection = require('../models/featureCollection');
 const Feature = require('../models/feature');
 const bodyParser = require('body-parser');
-// const { ObjectId } = require('mongodb');
+require('body-parser-xml')(bodyParser);
 const geoJson = require('../middleware/geoJson');
+const kmlConverter = require('../middleware/kml');
 const { ObjectId } = require('mongodb');
-// const featureCollection = require('../models/featureCollection');
 
 const router = express.Router()
 
@@ -14,6 +14,15 @@ module.exports = router;
 // Post geoJSON Method
 router.post('/post/geoJSON', bodyParser.json(), async (req, res) => {
     const data = await geoJson.postCollection(req);
+    res.status(data[0]).json(data[1]);
+});
+
+// Post KML Method
+// parsed as text, xml is validated during conversion to geoJSON
+router.post('/post/kml', bodyParser.text(), async (req, res) => {
+        console.log(req.body);
+    const kmlString = req.body;
+    const data = await kmlConverter.convertToGeoJSON(kmlString);
     res.status(data[0]).json(data[1]);
 });
 
@@ -38,6 +47,12 @@ router.get('/featureCollections', async (req, res) => {
 // Get all features
 router.get('/features', async (req, res) => {
     const data = await geoJson.getAllFeatures();
+    res.status(data[0]).json(data[1]);
+});
+
+// Get geoJson features withing circle
+router.get('/getFeaturesWithinCircle', bodyParser.json(), async (req, res) => {
+    const data = await geoJson.getFeaturesWitinCircle(req);
     res.status(data[0]).json(data[1]);
 });
 

@@ -1,9 +1,12 @@
 const mongoose = require('mongoose');
 const ObjectId = mongoose.Types.ObjectId;
+const gjv = require("geojson-validation");
 const FeatureCollection = require('../models/featureCollection');
 const Feature = require('../models/feature');
 
 postCollection = async (req) => {
+	if (!gjv.valid(req.body)) return [400, "Invalid geoJSON."];
+	
 	const featureIds = [];
 	await Promise.all(req.body.features.map(async element => {
 		const feature = new Feature({
@@ -106,6 +109,36 @@ getAllFeatures = async () => {
 	}
 }
 
+getFeaturesWithinCircle = async (req) => {
+	try {
+		const features = await Feature.find({
+			geometry: {
+				$geoWithin: {
+					$centerSphere: [req.body.center, req.body.radius]
+				}
+			}
+		});
+
+		// no error if no features found, simply do not display any features
+		
+		const featureCollection = new FeatureCollection({
+			type: "FeatureCollection",
+			name: "Within Circle",
+			crs: {
+				type: "name",
+				properties: {
+					name: "urn:ogc:def:crs:EPSG::4326"
+				}
+			},
+			features: features
+		});
+		return [200, featureCollection];
+	
+	} catch (error) {
+		return [500, error.message];
+	}
+}
+
 getFeaturesWitinPolygon = async (req) => {
 	try {
         const features = await Feature.find({
@@ -138,4 +171,4 @@ getFeaturesWitinPolygon = async (req) => {
     }
 }
 
-module.exports = {postCollection, getCollectionById, getFeatureById, getAllFeatures, getFeaturesWitinPolygon, getAllCollections};
+module.exports = {postCollection, getCollectionById, getFeatureById, getAllFeatures, getFeaturesWithinCircle,getFeaturesWitinPolygon, getAllCollections};
