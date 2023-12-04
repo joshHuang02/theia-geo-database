@@ -1,0 +1,460 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "9d270365-b04b-4848-9201-e29b03f1151e",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -116.91041488125451,
+              33.01192668069897
+            ],
+            [
+              -116.90978165728944,
+              33.012424112992335
+            ],
+            [
+              -116.91049625819802,
+              33.01319368534489
+            ],
+            [
+              -116.91113508154926,
+              33.0127166906251
+            ],
+            [
+              -116.91041488125451,
+              33.01192668069897
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "text": "Public Works",
+        "tempId": "2d03a080-a79f-4a46-bd74-7bc62aaffabd",
+        "buffers": [
+          50
+        ],
+        "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
+        "created_at": 1695416453.8952212,
+        "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
+        "description": "Public works offices and equipment",
+        "modified_at": 1695417472.5238707,
+        "centerOfMass": [
+          -116.91045722747104,
+          33.01256374590656
+        ],
+        "classification": "friend",
+        "centerOfMassHeight": 436.7990202801694
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "a317e0b2-07f1-490f-8e08-457157d48edd",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.79351000647287,
+          39.33828330092728
+        ]
+      },
+      "properties": {
+        "text": "The Fire",
+        "tempId": "57428f08-7f1f-4b28-bb74-f243b411810a",
+        "buffers": [
+          100,
+          200,
+          500
+        ],
+        "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
+        "elevation": {
+          "geoid": 1087.9632416818274
+        },
+        "created_at": 1693508035.3536677,
+        "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
+        "modified_at": 1693508304.5130937,
+        "classification": "hostile"
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "1106473b-d4d7-4fa8-abee-7b81ef11ab99",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.91048389723265,
+          33.01252238444766
+        ]
+      },
+      "properties": {
+        "text": "Water Treatment",
+        "tempId": "dd399a89-aebd-4119-b892-d1d3400470ae",
+        "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
+        "elevation": {
+          "geoid": 436.81999275560554
+        },
+        "created_at": 1695416490.1548042,
+        "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
+        "description": "Water treatment facility",
+        "modified_at": 1695417446.143081,
+        "classification": "friend"
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "860348a8-88a3-4f6c-be2d-be3e12692eb1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.90813954365363,
+          33.01167673270811
+        ]
+      },
+      "properties": {
+        "text": "Rally Point A",
+        "tempId": "bfa19d89-682a-4ae8-85c7-bbadf8891b4a",
+        "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
+        "elevation": {
+          "geoid": 435.111046616908
+        },
+        "created_at": 1695415556.1869526,
+        "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
+        "modified_at": 1695416061.1932445,
+        "classification": "friend"
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "9e7ffcde-5962-4f58-af7f-eefe59a460aa",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.90777768549749,
+          33.01264312519095
+        ]
+      },
+      "properties": {
+        "text": "Fire Station",
+        "tempId": "08b513f9-8679-4ed9-adbf-6f49d0c13bb3",
+        "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
+        "elevation": {
+          "geoid": 435.4483503249418
+        },
+        "created_at": 1695416622.4896016,
+        "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
+        "modified_at": 1695416628.5237272,
+        "classification": "friend"
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "53614a50-2761-4751-a4b1-afcf5ff1ea3c",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -116.90812144293629,
+              33.01489255857024
+            ],
+            [
+              -116.9109530508669,
+              33.013485557452576
+            ],
+            [
+              -116.91194400335516,
+              33.012618186524
+            ],
+            [
+              -116.9112030951394,
+              33.01131981418429
+            ],
+            [
+              -116.91205405579424,
+              33.01112841067255
+            ],
+            [
+              -116.91346024008246,
+              33.011855224536326
+            ],
+            [
+              -116.91478731312978,
+              33.01327210997241
+            ],
+            [
+              -116.91529785456869,
+              33.01358627402489
+            ],
+            [
+              -116.91327549036714,
+              33.015470514169024
+            ],
+            [
+              -116.90898208689947,
+              33.01950553958667
+            ],
+            [
+              -116.90764807597401,
+              33.018855748151125
+            ],
+            [
+              -116.90540908224364,
+              33.01697320672546
+            ],
+            [
+              -116.90548043167307,
+              33.01605863091274
+            ],
+            [
+              -116.90650297065339,
+              33.016009255553804
+            ],
+            [
+              -116.90767874402343,
+              33.015875725519734
+            ],
+            [
+              -116.9090237478919,
+              33.016135895079664
+            ],
+            [
+              -116.90901642449015,
+              33.01572974825674
+            ],
+            [
+              -116.90812144293629,
+              33.01489255857024
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "text": "Burn Area",
+        "tempId": "548b5629-af9b-4f1d-a73c-4d9c9ea19688",
+        "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
+        "created_at": 1695416005.299183,
+        "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
+        "modified_at": 1695416014.3391528,
+        "centerOfMass": [
+          -116.91045746082858,
+          33.015533709206274
+        ],
+        "classification": "hostile",
+        "centerOfMassHeight": 430.78783152271234
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "f1271c68-0326-4c88-9c66-8452884cabe8",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.90594162111947,
+          33.01448994334887
+        ]
+      },
+      "properties": {
+        "text": "Post Office",
+        "tempId": "782c55db-e262-420f-8b44-c503edc3d3e7",
+        "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
+        "elevation": {
+          "geoid": 435.10802746483165
+        },
+        "created_at": 1695416644.9325743,
+        "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
+        "modified_at": 1695416651.0719051,
+        "classification": "friend"
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "e41c7413-9e2c-4bd8-821b-9ca0e9eb1eec",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -116.90873561306668,
+              33.010559280571755
+            ],
+            [
+              -116.90850697273565,
+              33.010283649644435
+            ],
+            [
+              -116.9081324835982,
+              33.010454083345685
+            ],
+            [
+              -116.90845097417767,
+              33.010718769440444
+            ],
+            [
+              -116.90873561306668,
+              33.010559280571755
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "text": "Substation",
+        "tempId": "22a01785-4347-407f-abcd-b4841cb9cca9",
+        "buffers": [
+          50
+        ],
+        "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
+        "created_at": 1695416281.6706967,
+        "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
+        "modified_at": 1695416312.6671429,
+        "centerOfMass": [
+          -116.90844958174829,
+          33.01050051914088
+        ],
+        "classification": "neutral",
+        "centerOfMassHeight": 435.46794491768
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "f1ef31fd-4d0a-4ae9-b8df-5c320b17aeaa",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -116.9073909579365,
+              33.01162855471419
+            ],
+            [
+              -116.9077667187352,
+              33.01136392669367
+            ],
+            [
+              -116.90749587786414,
+              33.011054037542166
+            ],
+            [
+              -116.90713219727557,
+              33.0113307208545
+            ],
+            [
+              -116.9073909579365,
+              33.01162855471419
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "text": "LZ-1",
+        "tempId": "55c0a6e4-77d2-4de6-8f14-35f2e4521b3b",
+        "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
+        "created_at": 1695416362.0256863,
+        "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
+        "modified_at": 1695416369.7481923,
+        "centerOfMass": [
+          -116.9074477890323,
+          33.0113434287302
+        ],
+        "classification": "friend",
+        "centerOfMassHeight": 434.65678399889566
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "028fa8c9-8b11-4e6e-a6ec-4e6b2a4f82fb",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.90868717499822,
+          33.01592438592983
+        ]
+      },
+      "properties": {
+        "text": "Search Area",
+        "tempId": "cade0ad1-9782-4e05-a84c-7e1732f50b49",
+        "buffers": [
+          50
+        ],
+        "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
+        "elevation": {
+          "geoid": 433.41548408239834
+        },
+        "created_at": 1695417028.298635,
+        "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
+        "modified_at": 1695417069.077146,
+        "classification": "unknown"
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "0a37e557-3239-48dc-ba30-355c1a41b42d",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -116.90826325436446,
+            33.011770420969015
+          ],
+          [
+            -116.90767581737956,
+            33.01216819437575
+          ],
+          [
+            -116.90706187306594,
+            33.01152828985853
+          ],
+          [
+            -116.90626545085328,
+            33.01062316236446
+          ],
+          [
+            -116.90589364695853,
+            33.010156017415284
+          ]
+        ]
+      },
+      "properties": {
+        "text": "Evacuation Route",
+        "center": [
+          -116.90707845066149,
+          33.011162105895515
+        ],
+        "tempId": "ad8828fd-bd41-4714-8252-0f0f17a5f5ce",
+        "buffers": [
+          5
+        ],
+        "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
+        "created_at": 1695417344.9674323,
+        "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
+        "modified_at": 1695417365.4903443,
+        "centerHeight": 434.80055209923887,
+        "classification": "friend"
+      },
+      "type": "Feature"
+    },
+    {
+      "id": "6461fe14-ff0f-4c22-9837-4058afc56d61",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.90771795879387,
+          33.012529527466185
+        ]
+      },
+      "properties": {
+        "text": "Incident Command Post ",
+        "tempId": "7f24f046-8ea6-4678-abb9-bf079b2b613b",
+        "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
+        "elevation": {
+          "geoid": 435.4444461977976
+        },
+        "created_at": 1695831641.253426,
+        "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
+        "modified_at": 1695831655.588434,
+        "classification": "unknown"
+      },
+      "type": "Feature"
+    }
+  ]
+}

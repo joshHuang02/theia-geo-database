@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Theia additional features</name>
+	<description>additional features for project theia database demo</description>
+	<gx:CascadingStyle kml:id="__managed_style_22189E865A2D6C9AC013">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/rpc/cc/icon?color=fbc02d&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>3</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<gx:displayMode>card</gx:displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_1A01FCF4AF2D6C9AC013">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/rpc/cc/icon?color=fbc02d&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<gx:displayMode>card</gx:displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_0E47DF6E792D6C9AC013">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_1A01FCF4AF2D6C9AC013</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_22189E865A2D6C9AC013</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark id="072CD420AC2D6C9AC008">
+		<name>Ramona Airport</name>
+		<gx:mid>/m/0dkx1k</gx:mid>
+		<gx:fid>0x80dbef6a0f1d8005:0x30f0f90c066a9789</gx:fid>
+		<LookAt>
+			<longitude>-116.9115525</longitude>
+			<latitude>33.0409315</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>868.5086413571901</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0E47DF6E792D6C9AC013</styleUrl>
+		<Point>
+			<altitudeMode>relativeToGround</altitudeMode>
+			<coordinates>-116.9116416,33.0409304,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="003744CBD92D6C9B62FA">
+		<name>Ramona</name>
+		<gx:mid>/m/0r55g</gx:mid>
+		<gx:fid>0x80dbe8647999d41f:0x58bd67c3d0b3c219</gx:fid>
+		<LookAt>
+			<longitude>-116.87019705</longitude>
+			<latitude>33.0352805</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>19488.78603645705</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0E47DF6E792D6C9AC013</styleUrl>
+		<Point>
+			<altitudeMode>relativeToGround</altitudeMode>
+			<coordinates>-116.8792553,33.04136039999999,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="089993B1C92D6C9CDD4B">
+		<name>San Diego Humane Society&apos;s Ramona Wildlife Center</name>
+		<gx:mid>/g/1tlgy780</gx:mid>
+		<gx:fid>0x80dbe5882dab58c7:0x598694da6f9cb205</gx:fid>
+		<LookAt>
+			<longitude>-116.9244232</longitude>
+			<latitude>33.0228118</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>868.7055539178882</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0E47DF6E792D6C9AC013</styleUrl>
+		<Point>
+			<altitudeMode>relativeToGround</altitudeMode>
+			<coordinates>-116.9244232,33.0228118,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="070ECD36062D6C9D6AFF">
+		<name>Holly Oaks County Preserve</name>
+		<gx:mid>/g/11v3ks_pjw</gx:mid>
+		<gx:fid>0x80dbe5de02829ec5:0x32d2a25da406ac8a</gx:fid>
+		<LookAt>
+			<longitude>-116.8963363</longitude>
+			<latitude>33.00622</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>868.8857848897622</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0E47DF6E792D6C9AC013</styleUrl>
+		<Point>
+			<altitudeMode>relativeToGround</altitudeMode>
+			<coordinates>-116.8963363,33.00622,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="08E63C7B5B2D6C9DE946">
+		<name>Hanson Elementary School</name>
+		<gx:mid>/m/0761hhj</gx:mid>
+		<gx:fid>0x80dbe5fd684d4947:0xf904effeba4f85d0</gx:fid>
+		<LookAt>
+			<longitude>-116.8901918</longitude>
+			<latitude>33.0182393</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>868.7552307885209</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0E47DF6E792D6C9AC013</styleUrl>
+		<Point>
+			<altitudeMode>relativeToGround</altitudeMode>
+			<coordinates>-116.8901918,33.0182393,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

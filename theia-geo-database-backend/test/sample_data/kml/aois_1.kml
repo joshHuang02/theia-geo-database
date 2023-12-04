@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="aois_1" id="aois_1">
+	<SimpleField name="id" type="string"></SimpleField>
+	<SimpleField name="text" type="string"></SimpleField>
+	<SimpleField name="tempId" type="string"></SimpleField>
+	<SimpleArrayField name="buffers" type="int"></SimpleArrayField>
+	<SimpleField name="layer_id" type="string"></SimpleField>
+	<SimpleField name="created_at" type="float"></SimpleField>
+	<SimpleField name="mission_id" type="string"></SimpleField>
+	<SimpleField name="modified_at" type="float"></SimpleField>
+	<SimpleArrayField name="centerOfMass" type="float"></SimpleArrayField>
+	<SimpleField name="classification" type="string"></SimpleField>
+	<SimpleField name="centerOfMassHeight" type="float"></SimpleField>
+	<SimpleField name="elevation" type="string"></SimpleField>
+	<SimpleArrayField name="center" type="float"></SimpleArrayField>
+	<SimpleField name="centerHeight" type="float"></SimpleField>
+</Schema>
+<Folder><name>aois_1</name>
+  <Placemark>
+	<description>Public works offices and equipment</description>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#aois_1">
+		<SimpleData name="id">9d270365-b04b-4848-9201-e29b03f1151e</SimpleData>
+		<SimpleData name="text">Public Works</SimpleData>
+		<SimpleData name="tempId">2d03a080-a79f-4a46-bd74-7bc62aaffabd</SimpleData>
+		<SimpleData name="buffers">(1:50)</SimpleData>
+		<SimpleData name="layer_id">689343d9-7000-47ec-b619-11abe03088cb</SimpleData>
+		<SimpleData name="created_at">1695416453.89522</SimpleData>
+		<SimpleData name="mission_id">8833eaec-2839-4b29-a210-7ea27d0423b3</SimpleData>
+		<SimpleData name="modified_at">1695417472.52387</SimpleData>
+		<SimpleData name="centerOfMass">(2:-116.910457227471,33.01256374590656)</SimpleData>
+		<SimpleData name="classification">friend</SimpleData>
+		<SimpleData name="centerOfMassHeight">436.799020280169</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-116.910414881255,33.011926680699 -116.909781657289,33.0124241129923 -116.910496258198,33.0131936853449 -116.911135081549,33.0127166906251 -116.910414881255,33.011926680699</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#aois_1">
+		<SimpleData name="id">a317e0b2-07f1-490f-8e08-457157d48edd</SimpleData>
+		<SimpleData name="text">The Fire</SimpleData>
+		<SimpleData name="tempId">57428f08-7f1f-4b28-bb74-f243b411810a</SimpleData>
+		<SimpleData name="buffers">(3:100,200,500)</SimpleData>
+		<SimpleData name="layer_id">689343d9-7000-47ec-b619-11abe03088cb</SimpleData>
+		<SimpleData name="created_at">1693508035.35367</SimpleData>
+		<SimpleData name="mission_id">8833eaec-2839-4b29-a210-7ea27d0423b3</SimpleData>
+		<SimpleData name="modified_at">1693508304.51309</SimpleData>
+		<SimpleData name="classification">hostile</SimpleData>
+		<SimpleData name="elevation">{ &quot;geoid&quot;: 1087.963242 }</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-120.793510006473,39.3382833009273</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>Water treatment facility</description>
+	<ExtendedData><SchemaData schemaUrl="#aois_1">
+		<SimpleData name="id">1106473b-d4d7-4fa8-abee-7b81ef11ab99</SimpleData>
+		<SimpleData name="text">Water Treatment</SimpleData>
+		<SimpleData name="tempId">dd399a89-aebd-4119-b892-d1d3400470ae</SimpleData>
+		<SimpleData name="layer_id">689343d9-7000-47ec-b619-11abe03088cb</SimpleData>
+		<SimpleData name="created_at">1695416490.1548</SimpleData>
+		<SimpleData name="mission_id">8833eaec-2839-4b29-a210-7ea27d0423b3</SimpleData>
+		<SimpleData name="modified_at">1695417446.14308</SimpleData>
+		<SimpleData name="classification">friend</SimpleData>
+		<SimpleData name="elevation">{ &quot;geoid&quot;: 436.819993 }</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-116.910483897233,33.0125223844477</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#aois_1">
+		<SimpleData name="id">860348a8-88a3-4f6c-be2d-be3e12692eb1</SimpleData>
+		<SimpleData name="text">Rally Point A</SimpleData>
+		<SimpleData name="tempId">bfa19d89-682a-4ae8-85c7-bbadf8891b4a</SimpleData>
+		<SimpleData name="layer_id">689343d9-7000-47ec-b619-11abe03088cb</SimpleData>
+		<SimpleData name="created_at">1695415556.18695</SimpleData>
+		<SimpleData name="mission_id">8833eaec-2839-4b29-a210-7ea27d0423b3</SimpleData>
+		<SimpleData name="modified_at">1695416061.19324</SimpleData>
+		<SimpleData name="classification">friend</SimpleData>
+		<SimpleData name="elevation">{ &quot;geoid&quot;: 435.111047 }</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-116.908139543654,33.0116767327081</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#aois_1">
+		<SimpleData name="id">9e7ffcde-5962-4f58-af7f-eefe59a460aa</SimpleData>
+		<SimpleData name="text">Fire Station</SimpleData>
+		<SimpleData name="tempId">08b513f9-8679-4ed9-adbf-6f49d0c13bb3</SimpleData>
+		<SimpleData name="layer_id">689343d9-7000-47ec-b619-11abe03088cb</SimpleData>
+		<SimpleData name="created_at">1695416622.4896</SimpleData>
+		<SimpleData name="mission_id">8833eaec-2839-4b29-a210-7ea27d0423b3</SimpleData>
+		<SimpleData name="modified_at">1695416628.52373</SimpleData>
+		<SimpleData name="classification">friend</SimpleData>
+		<SimpleData name="elevation">{ &quot;geoid&quot;: 435.448350 }</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-116.907777685497,33.0126431251909</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#aois_1">
+		<SimpleData name="id">53614a50-2761-4751-a4b1-afcf5ff1ea3c</SimpleData>
+		<SimpleData name="text">Burn Area</SimpleData>
+		<SimpleData name="tempId">548b5629-af9b-4f1d-a73c-4d9c9ea19688</SimpleData>
+		<SimpleData name="layer_id">689343d9-7000-47ec-b619-11abe03088cb</SimpleData>
+		<SimpleData name="created_at">1695416005.29918</SimpleData>
+		<SimpleData name="mission_id">8833eaec-2839-4b29-a210-7ea27d0423b3</SimpleData>
+		<SimpleData name="modified_at">1695416014.33915</SimpleData>
+		<SimpleData name="centerOfMass">(2:-116.9104574608286,33.01553370920627)</SimpleData>
+		<SimpleData name="classification">hostile</SimpleData>
+		<SimpleData name="centerOfMassHeight">430.787831522712</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-116.908121442936,33.0148925585702 -116.910953050867,33.0134855574526 -116.911944003355,33.012618186524 -116.911203095139,33.0113198141843 -116.912054055794,33.0111284106725 -116.913460240082,33.0118552245363 -116.91478731313,33.0132721099724 -116.915297854569,33.0135862740249 -116.913275490367,33.015470514169 -116.908982086899,33.0195055395867 -116.907648075974,33.0188557481511 -116.905409082244,33.0169732067255 -116.905480431673,33.0160586309127 -116.906502970653,33.0160092555538 -116.907678744023,33.0158757255197 -116.909023747892,33.0161358950797 -116.90901642449,33.0157297482567 -116.908121442936,33.0148925585702</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#aois_1">
+		<SimpleData name="id">f1271c68-0326-4c88-9c66-8452884cabe8</SimpleData>
+		<SimpleData name="text">Post Office</SimpleData>
+		<SimpleData name="tempId">782c55db-e262-420f-8b44-c503edc3d3e7</SimpleData>
+		<SimpleData name="layer_id">689343d9-7000-47ec-b619-11abe03088cb</SimpleData>
+		<SimpleData name="created_at">1695416644.93257</SimpleData>
+		<SimpleData name="mission_id">8833eaec-2839-4b29-a210-7ea27d0423b3</SimpleData>
+		<SimpleData name="modified_at">1695416651.07191</SimpleData>
+		<SimpleData name="classification">friend</SimpleData>
+		<SimpleData name="elevation">{ &quot;geoid&quot;: 435.108027 }</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-116.905941621119,33.0144899433489</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#aois_1">
+		<SimpleData name="id">e41c7413-9e2c-4bd8-821b-9ca0e9eb1eec</SimpleData>
+		<SimpleData name="text">Substation</SimpleData>
+		<SimpleData name="tempId">22a01785-4347-407f-abcd-b4841cb9cca9</SimpleData>
+		<SimpleData name="buffers">(1:50)</SimpleData>
+		<SimpleData name="layer_id">689343d9-7000-47ec-b619-11abe03088cb</SimpleData>
+		<SimpleData name="created_at">1695416281.6707</SimpleData>
+		<SimpleData name="mission_id">8833eaec-2839-4b29-a210-7ea27d0423b3</SimpleData>
+		<SimpleData name="modified_at">1695416312.66714</SimpleData>
+		<SimpleData name="centerOfMass">(2:-116.9084495817483,33.01050051914088)</SimpleData>
+		<SimpleData name="classification">neutral</SimpleData>
+		<SimpleData name="centerOfMassHeight">435.46794491768</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-116.908735613067,33.0105592805718 -116.908506972736,33.0102836496444 -116.908132483598,33.0104540833457 -116.908450974178,33.0107187694404 -116.908735613067,33.0105592805718</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#aois_1">
+		<SimpleData name="id">f1ef31fd-4d0a-4ae9-b8df-5c320b17aeaa</SimpleData>
+		<SimpleData name="text">LZ-1</SimpleData>
+		<SimpleData name="tempId">55c0a6e4-77d2-4de6-8f14-35f2e4521b3b</SimpleData>
+		<SimpleData name="layer_id">689343d9-7000-47ec-b619-11abe03088cb</SimpleData>
+		<SimpleData name="created_at">1695416362.02569</SimpleData>
+		<SimpleData name="mission_id">8833eaec-2839-4b29-a210-7ea27d0423b3</SimpleData>
+		<SimpleData name="modified_at">1695416369.74819</SimpleData>
+		<SimpleData name="centerOfMass">(2:-116.9074477890323,33.0113434287302)</SimpleData>
+		<SimpleData name="classification">friend</SimpleData>
+		<SimpleData name="centerOfMassHeight">434.656783998896</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-116.907390957936,33.0116285547142 -116.907766718735,33.0113639266937 -116.907495877864,33.0110540375422 -116.907132197276,33.0113307208545 -116.907390957936,33.0116285547142</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#aois_1">
+		<SimpleData name="id">028fa8c9-8b11-4e6e-a6ec-4e6b2a4f82fb</SimpleData>
+		<SimpleData name="text">Search Area</SimpleData>
+		<SimpleData name="tempId">cade0ad1-9782-4e05-a84c-7e1732f50b49</SimpleData>
+		<SimpleData name="buffers">(1:50)</SimpleData>
+		<SimpleData name="layer_id">689343d9-7000-47ec-b619-11abe03088cb</SimpleData>
+		<SimpleData name="created_at">1695417028.29864</SimpleData>
+		<SimpleData name="mission_id">8833eaec-2839-4b29-a210-7ea27d0423b3</SimpleData>
+		<SimpleData name="modified_at">1695417069.07715</SimpleData>
+		<SimpleData name="classification">unknown</SimpleData>
+		<SimpleData name="elevation">{ &quot;geoid&quot;: 433.415484 }</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-116.908687174998,33.0159243859298</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#aois_1">
+		<SimpleData name="id">0a37e557-3239-48dc-ba30-355c1a41b42d</SimpleData>
+		<SimpleData name="text">Evacuation Route</SimpleData>
+		<SimpleData name="tempId">ad8828fd-bd41-4714-8252-0f0f17a5f5ce</SimpleData>
+		<SimpleData name="buffers">(1:5)</SimpleData>
+		<SimpleData name="layer_id">689343d9-7000-47ec-b619-11abe03088cb</SimpleData>
+		<SimpleData name="created_at">1695417344.96743</SimpleData>
+		<SimpleData name="mission_id">8833eaec-2839-4b29-a210-7ea27d0423b3</SimpleData>
+		<SimpleData name="modified_at">1695417365.49034</SimpleData>
+		<SimpleData name="classification">friend</SimpleData>
+		<SimpleData name="center">(2:-116.9070784506615,33.01116210589552)</SimpleData>
+		<SimpleData name="centerHeight">434.800552099239</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-116.908263254364,33.011770420969 -116.90767581738,33.0121681943757 -116.907061873066,33.0115282898585 -116.906265450853,33.0106231623645 -116.905893646959,33.0101560174153</coordinates></LineString>
+  </Placemark>
+</Folder>
+</Document></kml>
