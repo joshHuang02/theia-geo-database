@@ -7,13 +7,42 @@
 	},
 	"item": [
 		{
-			"name": "Post geoJSON CMU",
+			"name": "KML Cities",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"type\": \"FeatureCollection\",\n    \"features\": [\n      {\n        \"type\": \"Feature\",\n        \"geometry\": {\n          \"type\": \"Point\",\n          \"coordinates\": [ -122.0822035425683, 37.42228990140251, 0 ]\n        },\n        \"properties\": {\n          \"name\": \"Simple placemark\",\n          \"description\": \"Attached to the ground. Intelligently places itself at the height of the underlying terrain.\"\n        }\n      }\n    ]\n  }",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<kml xmlns=\"http://www.opengis.net/kml/2.2\" xmlns:gx=\"http://www.google.com/kml/ext/2.2\" xmlns:kml=\"http://www.opengis.net/kml/2.2\" xmlns:atom=\"http://www.w3.org/2005/Atom\">\n<Document>\n\t<name>Cities</name>\n\t<gx:CascadingStyle kml:id=\"__managed_style_22853032FC2D58079A5D\">\n\t\t<Style>\n\t\t\t<IconStyle>\n\t\t\t\t<scale>1.2</scale>\n\t\t\t\t<Icon>\n\t\t\t\t\t<href>https://earth.google.com/earth/rpc/cc/icon?color=fbc02d&amp;id=2000&amp;scale=4</href>\n\t\t\t\t</Icon>\n\t\t\t\t<hotSpot x=\"64\" y=\"128\" xunits=\"pixels\" yunits=\"insetPixels\"/>\n\t\t\t</IconStyle>\n\t\t\t<LabelStyle>\n\t\t\t</LabelStyle>\n\t\t\t<LineStyle>\n\t\t\t\t<color>ff2dc0fb</color>\n\t\t\t\t<width>3</width>\n\t\t\t</LineStyle>\n\t\t\t<PolyStyle>\n\t\t\t\t<color>40ffffff</color>\n\t\t\t</PolyStyle>\n\t\t\t<BalloonStyle>\n\t\t\t\t<gx:displayMode>card</gx:displayMode>\n\t\t\t</BalloonStyle>\n\t\t</Style>\n\t</gx:CascadingStyle>\n\t<gx:CascadingStyle kml:id=\"__managed_style_17779FD9012D58079A5D\">\n\t\t<Style>\n\t\t\t<IconStyle>\n\t\t\t\t<Icon>\n\t\t\t\t\t<href>https://earth.google.com/earth/rpc/cc/icon?color=fbc02d&amp;id=2000&amp;scale=4</href>\n\t\t\t\t</Icon>\n\t\t\t\t<hotSpot x=\"64\" y=\"128\" xunits=\"pixels\" yunits=\"insetPixels\"/>\n\t\t\t</IconStyle>\n\t\t\t<LabelStyle>\n\t\t\t</LabelStyle>\n\t\t\t<LineStyle>\n\t\t\t\t<color>ff2dc0fb</color>\n\t\t\t\t<width>2</width>\n\t\t\t</LineStyle>\n\t\t\t<PolyStyle>\n\t\t\t\t<color>40ffffff</color>\n\t\t\t</PolyStyle>\n\t\t\t<BalloonStyle>\n\t\t\t\t<gx:displayMode>card</gx:displayMode>\n\t\t\t</BalloonStyle>\n\t\t</Style>\n\t</gx:CascadingStyle>\n\t<StyleMap id=\"__managed_style_008CF957D42D58079A5D\">\n\t\t<Pair>\n\t\t\t<key>normal</key>\n\t\t\t<styleUrl>#__managed_style_17779FD9012D58079A5D</styleUrl>\n\t\t</Pair>\n\t\t<Pair>\n\t\t\t<key>highlight</key>\n\t\t\t<styleUrl>#__managed_style_22853032FC2D58079A5D</styleUrl>\n\t\t</Pair>\n\t</StyleMap>\n\t<Placemark id=\"0734A1CD6A2D58079A52\">\n\t\t<name>New York</name>\n\t\t<gx:mid>/m/02_286</gx:mid>\n\t\t<gx:fid>0x89c24fa5d33f083b:0xc80b8f06e177fe62</gx:fid>\n\t\t<LookAt>\n\t\t\t<longitude>-73.97968099999999</longitude>\n\t\t\t<latitude>40.6974881</latitude>\n\t\t\t<altitude>0</altitude>\n\t\t\t<heading>0</heading>\n\t\t\t<tilt>0</tilt>\n\t\t\t<gx:fovy>35</gx:fovy>\n\t\t\t<range>141000.1899048818</range>\n\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n\t\t</LookAt>\n\t\t<styleUrl>#__managed_style_008CF957D42D58079A5D</styleUrl>\n\t\t<Point>\n\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n\t\t\t<coordinates>-74.0059728,40.7127753,0</coordinates>\n\t\t</Point>\n\t</Placemark>\n\t<Placemark id=\"084A021F7B2D58086B25\">\n\t\t<name>Pittsburgh</name>\n\t\t<gx:mid>/m/068p2</gx:mid>\n\t\t<gx:fid>0x8834f16f48068503:0x8df915a15aa21b34</gx:fid>\n\t\t<LookAt>\n\t\t\t<longitude>-79.98050049999999</longitude>\n\t\t\t<latitude>40.43136844999999</latitude>\n\t\t\t<altitude>0</altitude>\n\t\t\t<heading>0</heading>\n\t\t\t<tilt>0</tilt>\n\t\t\t<gx:fovy>35</gx:fovy>\n\t\t\t<range>35390.4796581583</range>\n\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n\t\t</LookAt>\n\t\t<styleUrl>#__managed_style_008CF957D42D58079A5D</styleUrl>\n\t\t<Point>\n\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n\t\t\t<coordinates>-79.9958864,40.44062479999999,0</coordinates>\n\t\t</Point>\n\t</Placemark>\n\t<Placemark id=\"09E5CE3FFF2D5809130E\">\n\t\t<name>Cleveland</name>\n\t\t<gx:mid>/m/01sn3</gx:mid>\n\t\t<gx:fid>0x8830ef2ee3686b2d:0xed04cb55f7621842</gx:fid>\n\t\t<LookAt>\n\t\t\t<longitude>-81.70585995</longitude>\n\t\t\t<latitude>41.497532</latitude>\n\t\t\t<altitude>0</altitude>\n\t\t\t<heading>0</heading>\n\t\t\t<tilt>0</tilt>\n\t\t\t<gx:fovy>35</gx:fovy>\n\t\t\t<range>69646.58905341326</range>\n\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n\t\t</LookAt>\n\t\t<styleUrl>#__managed_style_008CF957D42D58079A5D</styleUrl>\n\t\t<Point>\n\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n\t\t\t<coordinates>-81.6943605,41.49932,0</coordinates>\n\t\t</Point>\n\t</Placemark>\n\t<Placemark id=\"08800E81BD2D5809485E\">\n\t\t<name>Houston</name>\n\t\t<gx:mid>/m/03l2n</gx:mid>\n\t\t<gx:fid>0x8640b8b4488d8501:0xca0d02def365053b</gx:fid>\n\t\t<LookAt>\n\t\t\t<longitude>-95.40129145</longitude>\n\t\t\t<latitude>29.81717795</latitude>\n\t\t\t<altitude>0</altitude>\n\t\t\t<heading>0</heading>\n\t\t\t<tilt>0</tilt>\n\t\t\t<gx:fovy>35</gx:fovy>\n\t\t\t<range>161355.9242977817</range>\n\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n\t\t</LookAt>\n\t\t<styleUrl>#__managed_style_008CF957D42D58079A5D</styleUrl>\n\t\t<Point>\n\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n\t\t\t<coordinates>-95.3698028,29.7604267,0</coordinates>\n\t\t</Point>\n\t</Placemark>\n\t<Placemark id=\"06DB1B8F552D58098090\">\n\t\t<name>San Antonio</name>\n\t\t<gx:mid>/m/0f2w0</gx:mid>\n\t\t<gx:fid>0x865c58af04d00eaf:0x856e13b10a016bc</gx:fid>\n\t\t<LookAt>\n\t\t\t<longitude>-98.51437645</longitude>\n\t\t\t<latitude>29.4585735</latitude>\n\t\t\t<altitude>0</altitude>\n\t\t\t<heading>0</heading>\n\t\t\t<tilt>0</tilt>\n\t\t\t<gx:fovy>35</gx:fovy>\n\t\t\t<range>161931.5369260592</range>\n\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n\t\t</LookAt>\n\t\t<styleUrl>#__managed_style_008CF957D42D58079A5D</styleUrl>\n\t\t<Point>\n\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n\t\t\t<coordinates>-98.49459220000001,29.4251905,0</coordinates>\n\t\t</Point>\n\t</Placemark>\n\t<Placemark id=\"0A32F7EED02D5809B71E\">\n\t\t<name>Los Angeles</name>\n\t\t<gx:mid>/m/030qb3t</gx:mid>\n\t\t<gx:fid>0x80c2c75ddc27da13:0xe22fdf6f254608f4</gx:fid>\n\t\t<LookAt>\n\t\t\t<longitude>-118.4117325</longitude>\n\t\t\t<latitude>34.020479</latitude>\n\t\t\t<altitude>0</altitude>\n\t\t\t<heading>0</heading>\n\t\t\t<tilt>0</tilt>\n\t\t\t<gx:fovy>35</gx:fovy>\n\t\t\t<range>154144.0002864131</range>\n\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n\t\t</LookAt>\n\t\t<styleUrl>#__managed_style_008CF957D42D58079A5D</styleUrl>\n\t\t<Point>\n\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n\t\t\t<coordinates>-118.242643,34.0549076,0</coordinates>\n\t\t</Point>\n\t</Placemark>\n\t<Placemark id=\"03ADAE28832D5809EA3C\">\n\t\t<name>San Francisco</name>\n\t\t<gx:mid>/m/0d6lp</gx:mid>\n\t\t<gx:fid>0x80859a6d00690021:0x4a501367f076adff</gx:fid>\n\t\t<LookAt>\n\t\t\t<longitude>-122.4376</longitude>\n\t\t\t<latitude>37.75769999999999</latitude>\n\t\t\t<altitude>0</altitude>\n\t\t\t<heading>0</heading>\n\t\t\t<tilt>0</tilt>\n\t\t\t<gx:fovy>35</gx:fovy>\n\t\t\t<range>36758.51672614871</range>\n\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n\t\t</LookAt>\n\t\t<styleUrl>#__managed_style_008CF957D42D58079A5D</styleUrl>\n\t\t<Point>\n\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n\t\t\t<coordinates>-122.4194155,37.7749295,0</coordinates>\n\t\t</Point>\n\t</Placemark>\n\t<Placemark id=\"02A04B3D0A2D580A2755\">\n\t\t<name>Miami</name>\n\t\t<gx:mid>/m/0f2v0</gx:mid>\n\t\t<gx:fid>0x88d9b0a20ec8c111:0xff96f271ddad4f65</gx:fid>\n\t\t<LookAt>\n\t\t\t<longitude>-80.22945845000001</longitude>\n\t\t\t<latitude>25.7824075</latitude>\n\t\t\t<altitude>0</altitude>\n\t\t\t<heading>0</heading>\n\t\t\t<tilt>0</tilt>\n\t\t\t<gx:fovy>35</gx:fovy>\n\t\t\t<range>41865.65660535101</range>\n\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n\t\t</LookAt>\n\t\t<styleUrl>#__managed_style_008CF957D42D58079A5D</styleUrl>\n\t\t<Point>\n\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n\t\t\t<coordinates>-80.1917902,25.7616798,0</coordinates>\n\t\t</Point>\n\t</Placemark>\n\t<Placemark id=\"0BD5A226602D580A8DB6\">\n\t\t<name>Portland</name>\n\t\t<gx:mid>/m/02frhbc</gx:mid>\n\t\t<gx:fid>0x54950b0b7da97427:0x1c36b9e6f6d18591</gx:fid>\n\t\t<LookAt>\n\t\t\t<longitude>-122.6544011</longitude>\n\t\t\t<latitude>45.54271395</latitude>\n\t\t\t<altitude>0</altitude>\n\t\t\t<heading>0</heading>\n\t\t\t<tilt>0</tilt>\n\t\t\t<gx:fovy>35</gx:fovy>\n\t\t\t<range>65126.72612789773</range>\n\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n\t\t</LookAt>\n\t\t<styleUrl>#__managed_style_008CF957D42D58079A5D</styleUrl>\n\t\t<Point>\n\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n\t\t\t<coordinates>-122.6783853,45.515232,0</coordinates>\n\t\t</Point>\n\t</Placemark>\n\t<Placemark id=\"0F9C9B17312D580ABAB9\">\n\t\t<name>Washington, D.C.</name>\n\t\t<gx:mid>/m/0rh6k</gx:mid>\n\t\t<gx:fid>0x89b7c6de5af6e45b:0xc2524522d4885d2a</gx:fid>\n\t\t<LookAt>\n\t\t\t<longitude>-77.01457599999999</longitude>\n\t\t\t<latitude>38.8937545</latitude>\n\t\t\t<altitude>0</altitude>\n\t\t\t<heading>0</heading>\n\t\t\t<tilt>0</tilt>\n\t\t\t<gx:fovy>35</gx:fovy>\n\t\t\t<range>36186.84031423355</range>\n\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n\t\t</LookAt>\n\t\t<styleUrl>#__managed_style_008CF957D42D58079A5D</styleUrl>\n\t\t<Point>\n\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n\t\t\t<coordinates>-77.03687069999999,38.9071923,0</coordinates>\n\t\t</Point>\n\t</Placemark>\n\t<Placemark id=\"07E176A6AD2D580B1DBD\">\n\t\t<name>Chicago</name>\n\t\t<gx:mid>/m/01_d4</gx:mid>\n\t\t<gx:fid>0x880e2c3cd0f4cbed:0xafe0a6ad09c0c000</gx:fid>\n\t\t<LookAt>\n\t\t\t<longitude>-87.73196394999999</longitude>\n\t\t\t<latitude>41.83373295</latitude>\n\t\t\t<altitude>0</altitude>\n\t\t\t<heading>0</heading>\n\t\t\t<tilt>0</tilt>\n\t\t\t<gx:fovy>35</gx:fovy>\n\t\t\t<range>69283.86000110368</range>\n\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n\t\t</LookAt>\n\t\t<styleUrl>#__managed_style_008CF957D42D58079A5D</styleUrl>\n\t\t<Point>\n\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n\t\t\t<coordinates>-87.6297982,41.8781136,0</coordinates>\n\t\t</Point>\n\t</Placemark>\n\t<Placemark id=\"0C482B99CC2D580BB034\">\n\t\t<name>Denver</name>\n\t\t<gx:mid>/m/02cl1</gx:mid>\n\t\t<gx:fid>0x876b80aa231f17cf:0x118ef4f8278a36d6</gx:fid>\n\t\t<LookAt>\n\t\t\t<longitude>-104.85511145</longitude>\n\t\t\t<latitude>39.76433895</latitude>\n\t\t\t<altitude>0</altitude>\n\t\t\t<heading>0</heading>\n\t\t\t<tilt>0</tilt>\n\t\t\t<gx:fovy>35</gx:fovy>\n\t\t\t<range>71478.22296948518</range>\n\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n\t\t</LookAt>\n\t\t<styleUrl>#__managed_style_008CF957D42D58079A5D</styleUrl>\n\t\t<Point>\n\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n\t\t\t<coordinates>-104.990251,39.7392358,0</coordinates>\n\t\t</Point>\n\t</Placemark>\n\t<Placemark id=\"029E4DABD42D580CD8E1\">\n\t\t<name>St. Louis</name>\n\t\t<gx:mid>/m/06wxw</gx:mid>\n\t\t<gx:fid>0x87d8b4a9faed8ef9:0xbe39eaca22bbe05b</gx:fid>\n\t\t<LookAt>\n\t\t\t<longitude>-90.24346200000001</longitude>\n\t\t\t<latitude>38.65310045</latitude>\n\t\t\t<altitude>0</altitude>\n\t\t\t<heading>0</heading>\n\t\t\t<tilt>0</tilt>\n\t\t\t<gx:fovy>35</gx:fovy>\n\t\t\t<range>72618.27124087709</range>\n\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n\t\t</LookAt>\n\t\t<styleUrl>#__managed_style_008CF957D42D58079A5D</styleUrl>\n\t\t<Point>\n\t\t\t<altitudeMode>relativeToGround</altitudeMode>\n\t\t\t<coordinates>-90.19940419999999,38.6270025,0</coordinates>\n\t\t</Point>\n\t</Placemark>\n</Document>\n</kml>\n",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/post/kml",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"post",
+						"kml"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "geoJSON CMU",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"FeatureCollection\",\n    \"name\": \"CMU\",\n    \"crs\": {\n        \"type\": \"name\",\n        \"properties\": {\n            \"name\": \"urn:ogc:def:crs:OGC:1.3:CRS84\"\n        }\n    },\n    \"features\": [\n        {\n            \"type\": \"Feature\",\n            \"properties\": {\n                \"Name\": \"Hamburg Hall\",\n                \"description\": null\n            },\n            \"geometry\": {\n                \"type\": \"Point\",\n                \"coordinates\": [\n                    -79.9455301225626,\n                    40.4442917144413\n                ]\n            }\n        },\n        {\n            \"type\": \"Feature\",\n            \"properties\": {\n                \"Name\": \"CMU\",\n                \"description\": \"<div>General outline of the CMU main campus in Pittsburgh</div>\"\n            },\n            \"geometry\": {\n                \"type\": \"Polygon\",\n                \"coordinates\": [\n                    [\n                        [\n                            -79.9447858276481,\n                            40.4462025365302\n                        ],\n                        [\n                            -79.9456577365265,\n                            40.4450300841763\n                        ],\n                        [\n                            -79.9462868841006,\n                            40.4450097721143\n                        ],\n                        [\n                            -79.9463056568079,\n                            40.4444840677536\n                        ],\n                        [\n                            -79.9467074328034,\n                            40.4444823929456\n                        ],\n                        [\n                            -79.947760079799,\n                            40.4415333269164\n                        ],\n                        [\n                            -79.9411662147616,\n                            40.4402962686587\n                        ],\n                        [\n                            -79.9406362244887,\n                            40.4414803981172\n                        ],\n                        [\n                            -79.9402767268592,\n                            40.441456349156\n                        ],\n                        [\n                            -79.9376155862952,\n                            40.4426117533134\n                        ],\n                        [\n                            -79.9387825203721,\n                            40.4438691359688\n                        ],\n                        [\n                            -79.9385171886597,\n                            40.4445600004418\n                        ],\n                        [\n                            -79.9408362681716,\n                            40.4449304360267\n                        ],\n                        [\n                            -79.9414404246011,\n                            40.4451203617314\n                        ],\n                        [\n                            -79.9408168676478,\n                            40.4460284622529\n                        ],\n                        [\n                            -79.9423152398134,\n                            40.4460204378047\n                        ],\n                        [\n                            -79.9425214559406,\n                            40.4473971746185\n                        ],\n                        [\n                            -79.945020997616,\n                            40.4471757967921\n                        ],\n                        [\n                            -79.9447858276481,\n                            40.4462025365302\n                        ]\n                    ]\n                ]\n            }\n        }\n    ]\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -36,13 +65,13 @@
 			"response": []
 		},
 		{
-			"name": "Post geoJSON point (SF)",
+			"name": "geoJSON point (SF)",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"type\": \"FeatureCollection\",\n    \"features\": [\n      {\n        \"type\": \"Feature\",\n        \"geometry\": {\n          \"type\": \"Point\",\n          \"coordinates\": [ -122.0822035425683, 37.42228990140251, 0 ]\n        },\n        \"properties\": {\n          \"name\": \"Simple placemark\",\n          \"description\": \"Attached to the ground. Intelligently places itself at the height of the underlying terrain.\"\n        }\n      }\n    ]\n  }",
+					"raw": "{\n    \"type\": \"FeatureCollection\",\n    \"name\":\"Simple placemark\",\n    \"features\": [\n      {\n        \"type\": \"Feature\",\n        \"geometry\": {\n          \"type\": \"Point\",\n          \"coordinates\": [ -122.0822035425683, 37.42228990140251, 0 ]\n        },\n        \"properties\": {\n          \"name\": \"Simple placemark\",\n          \"description\": \"Attached to the ground. Intelligently places itself at the height of the underlying terrain.\"\n        }\n      }\n    ]\n  }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -65,13 +94,13 @@
 			"response": []
 		},
 		{
-			"name": "Post geoJSON Schenley Park",
+			"name": "geoJSON Schenley Park",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"type\": \"FeatureCollection\",\n    \"features\": [\n      {\n        \"type\": \"Feature\",\n        \"geometry\": {\n          \"type\": \"Point\",\n          \"coordinates\": [ -122.0822035425683, 37.42228990140251, 0 ]\n        },\n        \"properties\": {\n          \"name\": \"Simple placemark\",\n          \"description\": \"Attached to the ground. Intelligently places itself at the height of the underlying terrain.\"\n        }\n      }\n    ]\n  }",
+					"raw": "{\n    \"type\": \"FeatureCollection\",\n    \"name\":\"Schenley Park\",\n    \"features\": [\n        {\n            \"type\": \"Feature\",\n            \"id\": \"0E5DB5D5F42D0F4FBEAF\",\n            \"geometry\": {\n                \"type\": \"Polygon\",\n                \"coordinates\": [\n                    [\n                        [\n                            -79.94739952280196,\n                            40.44149527585791,\n                            0\n                        ],\n                        [\n                            -79.94981381481117,\n                            40.43939458759966,\n                            0\n                        ],\n                        [\n                            -79.94953427466288,\n                            40.42940740966852,\n                            0\n                        ],\n                        [\n                            -79.94840547561938,\n                            40.42815246562844,\n                            0\n                        ],\n                        [\n                            -79.94268083942991,\n                            40.42964246095007,\n                            0\n                        ],\n                        [\n                            -79.93740598233732,\n                            40.42865052330058,\n                            0\n                        ],\n                        [\n                            -79.93188260189463,\n                            40.42965573445071,\n                            0\n                        ],\n                        [\n                            -79.93320216741783,\n                            40.43413071055511,\n                            0\n                        ],\n                        [\n                            -79.93495390345056,\n                            40.43893154534396,\n                            0\n                        ],\n                        [\n                            -79.94739952280196,\n                            40.44149527585791,\n                            0\n                        ]\n                    ]\n                ]\n            },\n            \"properties\": {\n                \"name\": \"Schenley Park\"\n            }\n        }\n    ]\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -94,13 +123,13 @@
 			"response": []
 		},
 		{
-			"name": "Post geoJSON Streets and Phipps",
+			"name": "geoJSON Streets and Phipps",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"type\": \"FeatureCollection\",\n    \"features\": [\n      {\n        \"type\": \"Feature\",\n        \"geometry\": {\n          \"type\": \"Point\",\n          \"coordinates\": [ -122.0822035425683, 37.42228990140251, 0 ]\n        },\n        \"properties\": {\n          \"name\": \"Simple placemark\",\n          \"description\": \"Attached to the ground. Intelligently places itself at the height of the underlying terrain.\"\n        }\n      }\n    ]\n  }",
+					"raw": "{\n    \"type\": \"FeatureCollection\",\n    \"name\": \"Streets and Phipps\",\n    \"crs\": {\n        \"type\": \"name\",\n        \"properties\": {\n            \"name\": \"urn:ogc:def:crs:OGC:1.3:CRS84\"\n        }\n    },\n    \"features\": [\n        {\n            \"type\": \"Feature\",\n            \"properties\": {\n                \"Name\": \"New Forbes Ave\"\n            },\n            \"geometry\": {\n                \"type\": \"LineString\",\n                \"coordinates\": [\n                    [\n                        -79.9624125813503,\n                        40.4375582779674\n                    ],\n                    [\n                        -79.955348536462,\n                        40.4427415342107\n                    ],\n                    [\n                        -79.9486744911093,\n                        40.4444451315054\n                    ],\n                    [\n                        -79.9451170552041,\n                        40.4446355682777\n                    ]\n                ]\n            }\n        },\n        {\n            \"type\": \"Feature\",\n            \"properties\": {\n                \"Name\": \"Fifth Ave\"\n            },\n            \"geometry\": {\n                \"type\": \"LineString\",\n                \"coordinates\": [\n                    [\n                        -79.9466807476317,\n                        40.4470758371385\n                    ],\n                    [\n                        -79.9515838509049,\n                        40.4467253472142\n                    ],\n                    [\n                        -79.9613326968446,\n                        40.4396717361398\n                    ],\n                    [\n                        -79.9632528017961,\n                        40.4382525759015\n                    ]\n                ]\n            }\n        },\n        {\n            \"type\": \"Feature\",\n            \"properties\": {\n                \"Name\": \"Phipps\"\n            },\n            \"geometry\": {\n                \"type\": \"Point\",\n                \"coordinates\": [\n                    -79.9479565224329,\n                    40.4388906102877\n                ]\n            }\n        }\n    ]\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -123,12 +152,82 @@
 			"response": []
 		},
 		{
-			"name": "Get collection by ID",
+			"name": "geoJSON collection by ID",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/api/featureCollections",
+					"raw": "localhost:3000/api/getOne/featureCollection/65693a6065d013f8332fe886",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"getOne",
+						"featureCollection",
+						"65693a6065d013f8332fe886"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "KML collection by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/getOne/kmlCollection/6569f19d973092b35a362b5c",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"getOne",
+						"kmlCollection",
+						"6569f19d973092b35a362b5c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "geoJSON feature by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/api/getOne/feature/656509c8c75d94ab23f4872b",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"getOne",
+						"feature",
+						"656509c8c75d94ab23f4872b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "geoJSON all collections",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/featureCollections?includeFeatures=true",
 					"host": [
 						"localhost"
 					],
@@ -136,70 +235,59 @@
 					"path": [
 						"api",
 						"featureCollections"
+					],
+					"query": [
+						{
+							"key": "includeFeatures",
+							"value": "true",
+							"description": "setting to true will return all feature details in response"
+						}
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Get feature by ID",
+			"name": "geoJSON all features",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/api/featureCollections",
+					"raw": "localhost:3000/api/features",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
 						"api",
-						"featureCollections"
+						"features"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Get all collections",
+			"name": "KML all features",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/api/featureCollections",
+					"raw": "localhost:3000/api/features/kml",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
 						"api",
-						"featureCollections"
+						"features",
+						"kml"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Get all features",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:3000/api/featureCollections",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"featureCollections"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get within polygon",
+			"name": "geoJSON within polygon",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -230,27 +318,131 @@
 			"response": []
 		},
 		{
-			"name": "Update feature by ID",
+			"name": "KML within polygon",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
-				"method": "PATCH",
+				"method": "GET",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"coordinates\": [\n          [\n            [\n              -79.98722229310701,\n              40.42978391567601\n            ],\n            [\n              -79.91434750413637,\n              40.42499418164428\n            ],\n            [\n              -79.91648576879827,\n              40.45290438768224\n            ],\n            [\n              -79.96842075038268,\n              40.46851922166161\n            ],\n            [\n              -80.011985300597,\n              40.46572823447352\n            ],\n            [\n              -80.01702961693753,\n              40.429085777483834\n            ],\n            [\n              -79.98722229310701,\n              40.42978391567601\n            ]\n          ]\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "localhost:3000/api/update/6557ca3e0ddec3e6e43ae701",
+					"raw": "localhost:3000/api/getFeaturesWithinPolygon/kml",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
 						"api",
-						"update",
-						"6557ca3e0ddec3e6e43ae701"
+						"getFeaturesWithinPolygon",
+						"kml"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Delete by ID",
+			"name": "geoJSON within circle",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"center\": [-79.9455301225626, 40.4442917144413],\n    \"radius\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/getFeaturesWithinCircle",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"getFeaturesWithinCircle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "KML within circle",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"center\": [-79.9455301225626, 40.4442917144413],\n    \"radius\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/getFeaturesWithinCircle/kml",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"getFeaturesWithinCircle",
+						"kml"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update feature by ID",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"type\": \"Feature\",\n            \"properties\": {\n                \"Name\": \"New Forbes Ave\"\n            },\n            \"geometry\": {\n                \"type\": \"LineString\",\n                \"coordinates\": [\n                    [\n                        -79.9624125813503,\n                        40.4375582779674\n                    ],\n                    [\n                        -79.955348536462,\n                        40.4427415342107\n                    ],\n                    [\n                        -79.9486744911093,\n                        40.4444451315054\n                    ],\n                    [\n                        -79.9451170552041,\n                        40.4446355682777\n                    ]\n                ]\n            }\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/updateFeature/656509d0c75d94ab23f4873a",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"updateFeature",
+						"656509d0c75d94ab23f4873a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete collection by ID",
 			"request": {
 				"method": "DELETE",
 				"header": [],
@@ -293,15 +485,15 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/api/deleteFeatureCollection/656509d0c75d94ab23f48740",
+					"raw": "localhost:3000/api/deleteFeature/656509c8c75d94ab23f4872c",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
 						"api",
-						"deleteFeatureCollection",
-						"656509d0c75d94ab23f48740"
+						"deleteFeature",
+						"656509c8c75d94ab23f4872c"
 					]
 				}
 			},
@@ -330,102 +522,6 @@
 					"path": [
 						"api",
 						"deleteAll"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "localhost:3000/api/post",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"name\" : \"Miles\",\n    \"age\" : 999\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:3000/api/post",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"post"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "localhost:3000/api/getOne/2 Copy",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:3000/api/getAll",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"getAll"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "localhost:3000/api/getOne/2 Copy 2",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:3000/api/getOne/654c3d5adbcda3e224523d88",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"getOne",
-						"654c3d5adbcda3e224523d88"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "localhost:3000/api/update/",
-			"request": {
-				"method": "PATCH",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"name\": \"Joshua\",\n    \"age\": 23\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:3000/api/update/654c3d5adbcda3e224523d88",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"update",
-						"654c3d5adbcda3e224523d88"
 					]
 				}
 			},
