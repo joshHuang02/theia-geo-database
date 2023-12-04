@@ -114,7 +114,7 @@ getFeaturesWithinCircle = async (req) => {
 		const features = await Feature.find({
 			geometry: {
 				$geoWithin: {
-					$centerSphere: [req.body.center, req.body.radius]
+					$centerSphere: [req.body.center, req.body.radius/6378.1]
 				}
 			}
 		});

@@ -1,36 +1,15 @@
 {
     "type": "FeatureCollection",
-    "name": "Within Polygon",
+    "name": "Within Circle",
     "crs": {
         "type": "name",
         "properties": {
             "name": "urn:ogc:def:crs:EPSG::4326"
         },
-        "_id": "6569f236973092b35a362b7e"
+        "_id": "656e56c040a4957925f06eca"
     },
     "featureIds": [],
     "features": [
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -79.9958864,
-                    40.44062479999999,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Pittsburgh",
-                "styleUrl": "#__managed_style_008CF957D42D58079A5D",
-                "styleMapHash": {
-                    "normal": "#__managed_style_17779FD9012D58079A5D",
-                    "highlight": "#__managed_style_22853032FC2D58079A5D"
-                }
-            },
-            "_id": "6569f169e157e92c98eaebf9",
-            "__v": 0
-        },
         {
             "type": "Feature",
             "geometry": {
@@ -278,5 +257,5 @@
             "__v": 0
         }
     ],
-    "_id": "6569f236973092b35a362b7d"
+    "_id": "656e56c040a4957925f06ec9"
 }

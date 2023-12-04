@@ -71,7 +71,7 @@ router.get('/features/kml', async (req, res) => {
 
 // Get geoJson features withing circle
 router.get('/getFeaturesWithinCircle', bodyParser.json(), async (req, res) => {
-    const data = await geoJson.getFeaturesWitinCircle(req);
+    const data = await geoJson.getFeaturesWithinCircle(req);
     res.status(data[0]).json(data[1]);
 });
 
