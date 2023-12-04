@@ -50,7 +50,7 @@ router.get('/getOne/feature/:id', async (req, res) => {
 
 // Get all feature collections, does not have a kml equivalent
 router.get('/featureCollections', async (req, res) => {
-    const data = await geoJson.getAllCollections();
+    const data = await geoJson.getAllCollections(req);
     res.status(data[0]).json(data[1]);
 });
 
@@ -69,16 +69,34 @@ router.get('/features/kml', async (req, res) => {
     res.status(geoJsonToKml[0]).send(geoJsonToKml[1]);
 });
 
+// Get geoJSON features within polygon
+router.get('/getFeaturesWithinPolygon', bodyParser.json(), async (req, res) => {
+    const data = await geoJson.getFeaturesWitinPolygon(req);
+    res.status(data[0]).json(data[1]);
+});
+
+// Get KML features within polygon
+router.get('/getFeaturesWithinPolygon/kml', bodyParser.json(), async (req, res) => {
+    const data = await geoJson.getFeaturesWitinPolygon(req);
+    if (data[0] != 200) res.status(data[0]).json(data[1]);
+
+    const geoJsonToKml = await kmlConverter.convertToKML(data[1]);
+    res.status(geoJsonToKml[0]).send(geoJsonToKml[1]);
+});
+
 // Get geoJson features withing circle
 router.get('/getFeaturesWithinCircle', bodyParser.json(), async (req, res) => {
     const data = await geoJson.getFeaturesWithinCircle(req);
     res.status(data[0]).json(data[1]);
 });
 
-// Get geoJSON features within polygon
-router.get('/getFeaturesWithinPolygon', bodyParser.json(), async (req, res) => {
-    const data = await geoJson.getFeaturesWitinPolygon(req);
-    res.status(data[0]).json(data[1]);
+// Get KML features within circle
+router.get('/getFeaturesWithinCircle/kml', bodyParser.json(), async (req, res) => {
+    const data = await geoJson.getFeaturesWithinCircle(req);
+    if (data[0] != 200) res.status(data[0]).json(data[1]);
+
+    const geoJsonToKml = await kmlConverter.convertToKML(data[1]);
+    res.status(geoJsonToKml[0]).send(geoJsonToKml[1]);
 });
 
 //Update collection by ID Method

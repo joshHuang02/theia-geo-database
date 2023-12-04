@@ -63,10 +63,21 @@ getCollectionById = async (req) => {
     }
 }
 
-getAllCollections = async () => {
+getAllCollections = async (req) => {
 	try {
         const featureCollections = await FeatureCollection.find();
 		if (!featureCollections) return [404, "No feature collections found."];
+
+		if (req.query.includeFeatures.toLowerCase() != "true") return [200, featureCollections];
+
+		for (const featureCollection of featureCollections) {
+			features = [];
+			for (const featureId of featureCollection.featureIds) {
+				features.push(await Feature.findById(featureId));
+				// may want to add error message if feature not found, but that should never happen since features are never deleted separately from its feature collection
+			}
+			featureCollection.features = features;
+		}
 		return [200, featureCollections];
 
         // if (allFeatures.length == 0) { res.json({ message: "No features found" }) }
