@@ -1,10 +1,22 @@
+/**
+ * Middleware functions for handling GeoJSON data in the backend.
+ * Data only enters and exits the database through these functions, any conversion between GeoJSON and other formats is handled before and after the use of these functions.
+ * @module geoJson
+ */
+
 const mongoose = require('mongoose');
 const ObjectId = mongoose.Types.ObjectId;
 const gjv = require("geojson-validation");
 const FeatureCollection = require('../models/featureCollection');
 const Feature = require('../models/feature');
 
-postCollection = async (geoJson) => {
+/**
+ * Saves a feature collection in the database.
+ *
+ * @param {Object} geoJson - The GeoJSON object representing the feature collection.
+ * @returns {Array} - An array containing the HTTP status code and the saved feature collection data.
+ */
+const postCollection = async (geoJson) => {
 	if (!gjv.valid(geoJson)) return [400, "Invalid geoJSON."];
 
 	const featureIds = [];
@@ -22,6 +34,15 @@ postCollection = async (geoJson) => {
 		}
 	}));
 
+	/**
+	 * Represents a feature collection in GeoJSON format.
+	 *
+	 * @typedef {Object} FeatureCollection
+	 * @property {string} type - The type of the GeoJSON object (e.g., "FeatureCollection").
+	 * @property {string} name - The name of the feature collection.
+	 * @property {Object} crs - The coordinate reference system of the feature collection.
+	 * @property {Array<string>} featureIds - The IDs of the features in the collection.
+	 */
 	const featureCollection = new FeatureCollection({
 		type: geoJson.type,
 		name: geoJson.name,
@@ -39,7 +60,13 @@ postCollection = async (geoJson) => {
 	}
 }
 
-getCollectionById = async (req) => {
+/**
+ * Retrieves a feature collection by its ID.
+ *
+ * @param {Object} req - The request object containing the feature collection ID.
+ * @returns {Array} - An array containing the HTTP status code and the retrieved feature collection.
+ */
+const getCollectionById = async (req) => {
 	try{
 		if (!ObjectId.isValid(req.params.id)) return [400, "Invalid feature collection ID."];
 
@@ -63,12 +90,18 @@ getCollectionById = async (req) => {
     }
 }
 
-getAllCollections = async (req) => {
+/**
+ * Retrieves all feature collections.
+ *
+ * @param {Object} req - The request object.
+ * @returns {Array} - An array containing the HTTP status code and the retrieved feature collections.
+ */
+const getAllCollections = async (req) => {
 	try {
         const featureCollections = await FeatureCollection.find();
 		if (!featureCollections) return [404, "No feature collections found."];
 
-		if (req.query.includeFeatures.toLowerCase() != "true") return [200, featureCollections];
+		if (!req.query.includeFeatures || req.query.includeFeatures.toLowerCase() != "true") return [200, featureCollections];
 
 		for (const featureCollection of featureCollections) {
 			features = [];
@@ -90,7 +123,13 @@ getAllCollections = async (req) => {
     }
 }
 
-getFeatureById = async (req) => {
+/**
+ * Retrieves a feature by its ID.
+ *
+ * @param {Object} req - The request object containing the feature ID.
+ * @returns {Array} - An array containing the HTTP status code and the retrieved feature.
+ */
+const getFeatureById = async (req) => {
 	try{
 		if (!ObjectId.isValid(req.params.id)) return [400, "Invalid feature ID"];
 
@@ -104,7 +143,12 @@ getFeatureById = async (req) => {
     }
 }
 
-getAllFeatures = async () => {
+/**
+ * Retrieves all features.
+ *
+ * @returns {Array} - An array containing the HTTP status code and the retrieved feature collection.
+ */
+const getAllFeatures = async () => {
 	try {
 		const features = await Feature.find();
 
@@ -120,7 +164,13 @@ getAllFeatures = async () => {
 	}
 }
 
-getFeaturesWithinCircle = async (req) => {
+/**
+ * Retrieves features within a circle.
+ *
+ * @param {Object} req - The request object containing the circle center and radius.
+ * @returns {Array} - An array containing the HTTP status code and the retrieved feature collection.
+ */
+const getFeaturesWithinCircle = async (req) => {
 	try {
 		const features = await Feature.find({
 			geometry: {
@@ -150,7 +200,13 @@ getFeaturesWithinCircle = async (req) => {
 	}
 }
 
-getFeaturesWitinPolygon = async (req) => {
+/**
+ * Retrieves features within a polygon.
+ *
+ * @param {Object} req - The request object containing the polygon coordinates.
+ * @returns {Array} - An array containing the HTTP status code and the retrieved feature collection.
+ */
+const getFeaturesWithinPolygon = async (req) => {
 	try {
         const features = await Feature.find({
             geometry: {
@@ -182,4 +238,14 @@ getFeaturesWitinPolygon = async (req) => {
     }
 }
 
-module.exports = {postCollection, getCollectionById, getFeatureById, getAllFeatures, getFeaturesWithinCircle,getFeaturesWitinPolygon, getAllCollections};
+module.exports = {
+	postCollection,
+	getCollectionById,
+	getFeatureById,
+	getAllFeatures,
+	getFeaturesWithinCircle,
+	getFeaturesWithinPolygon,
+	getAllCollections
+};
+
+// module.exports = {postCollection, getCollectionById, getFeatureById, getAllFeatures, getFeaturesWithinCircle,getFeaturesWitinPolygon, getAllCollections};

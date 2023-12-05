@@ -1,3 +1,15 @@
+/**
+ * @file This file contains the routes for handling various API endpoints related to geoJSON and KML feature collections and features.
+ * @module routes
+ * @requires express
+ * @requires ../models/featureCollection
+ * @requires ../models/feature
+ * @requires body-parser
+ * @requires body-parser-xml
+ * @requires ../middleware/geoJson
+ * @requires ../middleware/kml
+ * @requires mongodb
+ */
 const express = require('express');
 const FeatureCollection = require('../models/featureCollection');
 const Feature = require('../models/feature');
@@ -41,7 +53,7 @@ router.post('/post/kml', bodyParser.text(), async (req, res) => {
 
 /*
     This route is for getting a geoJSON feature collection by ID.
-    The feature collection is retrieved from the database as geoJSON and returned in the response.
+    The feature collection is retrieved from the database as geoJSON collection and returned in the response.
 
     Example query: http://localhost:3000/getOne/featureCollection/5f9b3b7b9c9b8c2b3c8b3b3b
 */
@@ -52,7 +64,7 @@ router.get('/getOne/featureCollection/:id', async (req, res) => {
 
 /*
     This route is for getting a KML feature collection by ID.
-    The feature collection is retrieved from the database as geoJSON and converted to KML using the tokml library.
+    The feature collection is retrieved from the database as geoJSON collection and converted to KML using the tokml library.
     The KML is then returned in the response.
 
     Example query: http://localhost:3000/getOne/kmlCollection/5f9b3b7b9c9b8c2b3c8b3b3b
@@ -67,7 +79,7 @@ router.get('/getOne/kmlCollection/:id', async (req, res) => {
 
 /*
     This route is for getting a geoJSON feature by ID and does not have a KML equivalent since individual features cannot be converted to KML.
-    The feature is retrieved from the database as geoJSON and returned in the response.
+    The feature is retrieved from the database as geoJSON feature and returned in the response.
 
     Example query: http://localhost:3000/getOne/feature/5f9b3b7b9c9b8c2b3c8b3b3b
 */
@@ -77,7 +89,7 @@ router.get('/getOne/feature/:id', async (req, res) => {
 });
 
 /*
-    This route is for getting all feature collections as geoJSON and does not have a kml equivalent since array of collections cannot be converted to KML.
+    This route is for getting all feature collections as geoJSON array and does not have a kml equivalent since array of collections cannot be converted to KML.
     The route can be queried to include features in the response by setting parameter "includeFeatures" to "true".
     The feature collections array is retrieved from the database as geoJSON and returned in the response.
     This route should be used for debugging purposes only.
@@ -91,7 +103,7 @@ router.get('/featureCollections', async (req, res) => {
 
 /*
     This route is for getting all features as geoJSON.
-    The features are retrieved from the database as geoJSON and returned in the response.
+    The features are retrieved from the database as geoJSON collection and returned in the response.
 
     Example query: http://localhost:3000/features
 */
@@ -103,7 +115,7 @@ router.get('/features', async (req, res) => {
 // Get all features in KML file
 /*
     This route is for getting all features as KML.
-    The features are retrieved from the database as geoJSON and converted to KML using the tokml library.
+    The features are retrieved from the database as geoJSON collection and converted to KML using the tokml library.
     The KML is then returned in the response.
 
     Example query: http://localhost:3000/features/kml
@@ -119,7 +131,7 @@ router.get('/features/kml', async (req, res) => {
 // Get geoJSON features within polygon
 /*
     This route is for getting all features within a polygon as geoJSON.
-    The features within the polygon are retrieved from the database as geoJSON and returned in the response.
+    The features within the polygon are retrieved from the database as geoJSON collection and returned in the response.
 
     Example query: http://localhost:3000/getFeaturesWithinPolygon
     Example body: {
@@ -132,7 +144,7 @@ router.get('/features/kml', async (req, res) => {
     }
 */
 router.get('/getFeaturesWithinPolygon', bodyParser.json(), async (req, res) => {
-    const data = await geoJson.getFeaturesWitinPolygon(req);
+    const data = await geoJson.getFeaturesWithinPolygon(req);
     res.status(data[0]).json(data[1]);
 });
 
@@ -140,7 +152,7 @@ router.get('/getFeaturesWithinPolygon', bodyParser.json(), async (req, res) => {
     This route does the same thing as "getFeaturesWithinPolygon", but converts the results to KML using the tokml library.
 */
 router.get('/getFeaturesWithinPolygon/kml', bodyParser.json(), async (req, res) => {
-    const data = await geoJson.getFeaturesWitinPolygon(req);
+    const data = await geoJson.getFeaturesWithinPolygon(req);
     if (data[0] != 200) res.status(data[0]).json(data[1]);
 
     const geoJsonToKml = await kmlConverter.convertToKML(data[1]);
@@ -149,7 +161,7 @@ router.get('/getFeaturesWithinPolygon/kml', bodyParser.json(), async (req, res) 
 
 /*
     This route is for getting all features within a circle as geoJSON.
-    The features within the circle are retrieved from the database as geoJSON and returned in the response.
+    The features within the circle are retrieved from the database as geoJSON collection and returned in the response.
 
     Example query: http://localhost:3000/getFeaturesWithinCircle
     Example body: {
@@ -180,20 +192,6 @@ router.get('/getFeaturesWithinCircle/kml', bodyParser.json(), async (req, res) =
 */
 router.patch('/updateCollection/:id', bodyParser.json(), async (req, res) => {
     res.status(400).json({ message: "Delete the old collection and upload a new one" })
-    // try {
-    //     const id = req.params.id;
-    //     const updatedData = req.body;
-    //     const options = { new: true };
-
-    //     const result = await FeatureCollection.findByIdAndUpdate(
-    //         id, updatedData, options
-    //     )
-
-    //     res.send(result)
-    // }
-    // catch (error) {
-    //     res.status(400).json({ message: error.message })
-    // }
 })
 
 /*

@@ -158,5 +158,45 @@
 			<coordinates>-116.8901918,33.0182393,0</coordinates>
 		</Point>
 	</Placemark>
+	<Placemark id="039F6319D92D6CC98A48">
+		<name>Ramona Grasslands Preserve</name>
+		<gx:mid>/g/12hn9tfnl</gx:mid>
+		<gx:fid>0x80dbef978564117f:0xeddb0b82e6e80e97</gx:fid>
+		<LookAt>
+			<longitude>-116.9505358</longitude>
+			<latitude>33.0332762</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>868.5918447103137</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0E47DF6E792D6C9AC013</styleUrl>
+		<Point>
+			<altitudeMode>relativeToGround</altitudeMode>
+			<coordinates>-116.9505358,33.0332762,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="080AB7BE3D2D6CC9D795">
+		<name>Ramona Grasslands County Preserve</name>
+		<gx:mid>/g/11vdtszdtd</gx:mid>
+		<gx:fid>0x80dbee684f1508c3:0xffd01a05db0ddebb</gx:fid>
+		<LookAt>
+			<longitude>-116.9504746</longitude>
+			<latitude>33.0592092</latitude>
+			<altitude>0</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>868.3099223705789</range>
+			<altitudeMode>relativeToGround</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0E47DF6E792D6C9AC013</styleUrl>
+		<Point>
+			<altitudeMode>relativeToGround</altitudeMode>
+			<coordinates>-116.9504746,33.0592092,0</coordinates>
+		</Point>
+	</Placemark>
 </Document>
 </kml>

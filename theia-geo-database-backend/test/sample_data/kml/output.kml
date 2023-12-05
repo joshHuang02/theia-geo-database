@@ -3,50 +3,6 @@
 	<Document>
 		<Placemark>
 			<ExtendedData><Data name="text">
-					<value>Fire Station</value>
-				</Data><Data name="tempId">
-					<value>08b513f9-8679-4ed9-adbf-6f49d0c13bb3</value>
-				</Data><Data name="layer_id">
-					<value>689343d9-7000-47ec-b619-11abe03088cb</value>
-				</Data><Data name="elevation">
-					<value>[object Object]</value>
-				</Data><Data name="created_at">
-					<value>1695416622.4896016</value>
-				</Data><Data name="mission_id">
-					<value>8833eaec-2839-4b29-a210-7ea27d0423b3</value>
-				</Data><Data name="modified_at">
-					<value>1695416628.5237272</value>
-				</Data><Data name="classification">
-					<value>friend</value>
-				</Data></ExtendedData>
-			<Point>
-				<coordinates>-116.90777768549749,33.01264312519095</coordinates>
-			</Point>
-		</Placemark>
-		<Placemark>
-			<ExtendedData><Data name="text">
-					<value>Rally Point A</value>
-				</Data><Data name="tempId">
-					<value>bfa19d89-682a-4ae8-85c7-bbadf8891b4a</value>
-				</Data><Data name="layer_id">
-					<value>689343d9-7000-47ec-b619-11abe03088cb</value>
-				</Data><Data name="elevation">
-					<value>[object Object]</value>
-				</Data><Data name="created_at">
-					<value>1695415556.1869526</value>
-				</Data><Data name="mission_id">
-					<value>8833eaec-2839-4b29-a210-7ea27d0423b3</value>
-				</Data><Data name="modified_at">
-					<value>1695416061.1932445</value>
-				</Data><Data name="classification">
-					<value>friend</value>
-				</Data></ExtendedData>
-			<Point>
-				<coordinates>-116.90813954365363,33.01167673270811</coordinates>
-			</Point>
-		</Placemark>
-		<Placemark>
-			<ExtendedData><Data name="text">
 					<value>Public Works</value>
 				</Data><Data name="tempId">
 					<value>2d03a080-a79f-4a46-bd74-7bc62aaffabd</value>
@@ -128,56 +84,80 @@
 		</Placemark>
 		<Placemark>
 			<ExtendedData><Data name="text">
-					<value>The Fire</value>
+					<value>Rally Point A</value>
 				</Data><Data name="tempId">
-					<value>57428f08-7f1f-4b28-bb74-f243b411810a</value>
-				</Data><Data name="buffers">
-					<value>100,200,500</value>
+					<value>bfa19d89-682a-4ae8-85c7-bbadf8891b4a</value>
 				</Data><Data name="layer_id">
 					<value>689343d9-7000-47ec-b619-11abe03088cb</value>
 				</Data><Data name="elevation">
 					<value>[object Object]</value>
 				</Data><Data name="created_at">
-					<value>1693508035.3536677</value>
+					<value>1695415556.1869526</value>
 				</Data><Data name="mission_id">
 					<value>8833eaec-2839-4b29-a210-7ea27d0423b3</value>
 				</Data><Data name="modified_at">
-					<value>1693508304.5130937</value>
+					<value>1695416061.1932445</value>
 				</Data><Data name="classification">
-					<value>hostile</value>
+					<value>friend</value>
 				</Data></ExtendedData>
 			<Point>
-				<coordinates>-120.79351000647287,39.33828330092728</coordinates>
+				<coordinates>-116.90813954365363,33.01167673270811</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<ExtendedData><Data name="text">
-					<value>Substation</value>
+					<value>Fire Station</value>
 				</Data><Data name="tempId">
-					<value>22a01785-4347-407f-abcd-b4841cb9cca9</value>
-				</Data><Data name="buffers">
-					<value>50</value>
+					<value>08b513f9-8679-4ed9-adbf-6f49d0c13bb3</value>
 				</Data><Data name="layer_id">
 					<value>689343d9-7000-47ec-b619-11abe03088cb</value>
+				</Data><Data name="elevation">
+					<value>[object Object]</value>
 				</Data><Data name="created_at">
-					<value>1695416281.6706967</value>
+					<value>1695416622.4896016</value>
 				</Data><Data name="mission_id">
 					<value>8833eaec-2839-4b29-a210-7ea27d0423b3</value>
 				</Data><Data name="modified_at">
-					<value>1695416312.6671429</value>
-				</Data><Data name="centerOfMass">
-					<value>-116.90844958174829,33.01050051914088</value>
+					<value>1695416628.5237272</value>
 				</Data><Data name="classification">
-					<value>neutral</value>
+					<value>friend</value>
+				</Data></ExtendedData>
+			<Point>
+				<coordinates>-116.90777768549749,33.01264312519095</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData><Data name="text">
+					<value>Burn Area</value>
+				</Data><Data name="tempId">
+					<value>548b5629-af9b-4f1d-a73c-4d9c9ea19688</value>
+				</Data><Data name="layer_id">
+					<value>689343d9-7000-47ec-b619-11abe03088cb</value>
+				</Data><Data name="created_at">
+					<value>1695416005.299183</value>
+				</Data><Data name="mission_id">
+					<value>8833eaec-2839-4b29-a210-7ea27d0423b3</value>
+				</Data><Data name="modified_at">
+					<value>1695416014.3391528</value>
+				</Data><Data name="centerOfMass">
+					<value>-116.91045746082858,33.015533709206274</value>
+				</Data><Data name="classification">
+					<value>hostile</value>
 				</Data><Data name="centerOfMassHeight">
-					<value>435.46794491768</value>
+					<value>430.78783152271234</value>
 				</Data></ExtendedData>
 			<Polygon>
 				<outerBoundaryIs>
 					<LinearRing>
-						<coordinates>-116.90873561306668,33.010559280571755 -116.90850697273565,33.010283649644435
-							-116.9081324835982,33.010454083345685 -116.90845097417767,33.010718769440444
-							-116.90873561306668,33.010559280571755</coordinates>
+						<coordinates>-116.90812144293629,33.01489255857024 -116.9109530508669,33.013485557452576
+							-116.91194400335516,33.012618186524 -116.9112030951394,33.01131981418429
+							-116.91205405579424,33.01112841067255 -116.91346024008246,33.011855224536326
+							-116.91478731312978,33.01327210997241 -116.91529785456869,33.01358627402489
+							-116.91327549036714,33.015470514169024 -116.90898208689947,33.01950553958667
+							-116.90764807597401,33.018855748151125 -116.90540908224364,33.01697320672546
+							-116.90548043167307,33.01605863091274 -116.90650297065339,33.016009255553804
+							-116.90767874402343,33.015875725519734 -116.9090237478919,33.016135895079664
+							-116.90901642449015,33.01572974825674 -116.90812144293629,33.01489255857024</coordinates>
 					</LinearRing>
 				</outerBoundaryIs>
 			</Polygon>
@@ -238,42 +218,6 @@
 		</Placemark>
 		<Placemark>
 			<ExtendedData><Data name="text">
-					<value>Burn Area</value>
-				</Data><Data name="tempId">
-					<value>548b5629-af9b-4f1d-a73c-4d9c9ea19688</value>
-				</Data><Data name="layer_id">
-					<value>689343d9-7000-47ec-b619-11abe03088cb</value>
-				</Data><Data name="created_at">
-					<value>1695416005.299183</value>
-				</Data><Data name="mission_id">
-					<value>8833eaec-2839-4b29-a210-7ea27d0423b3</value>
-				</Data><Data name="modified_at">
-					<value>1695416014.3391528</value>
-				</Data><Data name="centerOfMass">
-					<value>-116.91045746082858,33.015533709206274</value>
-				</Data><Data name="classification">
-					<value>hostile</value>
-				</Data><Data name="centerOfMassHeight">
-					<value>430.78783152271234</value>
-				</Data></ExtendedData>
-			<Polygon>
-				<outerBoundaryIs>
-					<LinearRing>
-						<coordinates>-116.90812144293629,33.01489255857024 -116.9109530508669,33.013485557452576
-							-116.91194400335516,33.012618186524 -116.9112030951394,33.01131981418429
-							-116.91205405579424,33.01112841067255 -116.91346024008246,33.011855224536326
-							-116.91478731312978,33.01327210997241 -116.91529785456869,33.01358627402489
-							-116.91327549036714,33.015470514169024 -116.90898208689947,33.01950553958667
-							-116.90764807597401,33.018855748151125 -116.90540908224364,33.01697320672546
-							-116.90548043167307,33.01605863091274 -116.90650297065339,33.016009255553804
-							-116.90767874402343,33.015875725519734 -116.9090237478919,33.016135895079664
-							-116.90901642449015,33.01572974825674 -116.90812144293629,33.01489255857024</coordinates>
-					</LinearRing>
-				</outerBoundaryIs>
-			</Polygon>
-		</Placemark>
-		<Placemark>
-			<ExtendedData><Data name="text">
 					<value>Post Office</value>
 				</Data><Data name="tempId">
 					<value>782c55db-e262-420f-8b44-c503edc3d3e7</value>
@@ -292,6 +236,77 @@
 				</Data></ExtendedData>
 			<Point>
 				<coordinates>-116.90594162111947,33.01448994334887</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData><Data name="text">
+					<value>Substation</value>
+				</Data><Data name="tempId">
+					<value>22a01785-4347-407f-abcd-b4841cb9cca9</value>
+				</Data><Data name="buffers">
+					<value>50</value>
+				</Data><Data name="layer_id">
+					<value>689343d9-7000-47ec-b619-11abe03088cb</value>
+				</Data><Data name="created_at">
+					<value>1695416281.6706967</value>
+				</Data><Data name="mission_id">
+					<value>8833eaec-2839-4b29-a210-7ea27d0423b3</value>
+				</Data><Data name="modified_at">
+					<value>1695416312.6671429</value>
+				</Data><Data name="centerOfMass">
+					<value>-116.90844958174829,33.01050051914088</value>
+				</Data><Data name="classification">
+					<value>neutral</value>
+				</Data><Data name="centerOfMassHeight">
+					<value>435.46794491768</value>
+				</Data></ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>-116.90873561306668,33.010559280571755 -116.90850697273565,33.010283649644435
+							-116.9081324835982,33.010454083345685 -116.90845097417767,33.010718769440444
+							-116.90873561306668,33.010559280571755</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Holly Oaks County Preserve</name>
+			<ExtendedData><Data name="name">
+					<value>Holly Oaks County Preserve</value>
+				</Data><Data name="styleUrl">
+					<value>#__managed_style_0E47DF6E792D6C9AC013</value>
+				</Data><Data name="styleMapHash">
+					<value>[object Object]</value>
+				</Data></ExtendedData>
+			<Point>
+				<coordinates>-116.8963363,33.00622,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Hanson Elementary School</name>
+			<ExtendedData><Data name="name">
+					<value>Hanson Elementary School</value>
+				</Data><Data name="styleUrl">
+					<value>#__managed_style_0E47DF6E792D6C9AC013</value>
+				</Data><Data name="styleMapHash">
+					<value>[object Object]</value>
+				</Data></ExtendedData>
+			<Point>
+				<coordinates>-116.8901918,33.0182393,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>San Diego Humane Society's Ramona Wildlife Center</name>
+			<ExtendedData><Data name="name">
+					<value>San Diego Humane Society's Ramona Wildlife Center</value>
+				</Data><Data name="styleUrl">
+					<value>#__managed_style_0E47DF6E792D6C9AC013</value>
+				</Data><Data name="styleMapHash">
+					<value>[object Object]</value>
+				</Data></ExtendedData>
+			<Point>
+				<coordinates>-116.9244232,33.0228118,0</coordinates>
 			</Point>
 		</Placemark>
 	</Document>

@@ -6,7 +6,7 @@
         "properties": {
             "name": "urn:ogc:def:crs:EPSG::4326"
         },
-        "_id": "656e668e1e56b45da290cb3b"
+        "_id": "656e6f934dfa80e4a7680fe5"
     },
     "featureIds": [],
     "features": [
@@ -48,8 +48,7 @@
                 "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
                 "created_at": 1695416453.8952212,
                 "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
-                "description": "Public works offices and equipment",
-                "modified_at": 1695417472.5238707,
+                "modified_at": 1695416473.4885054,
                 "centerOfMass": [
                     -116.91045722747104,
                     33.01256374590656
@@ -57,7 +56,94 @@
                 "classification": "friend",
                 "centerOfMassHeight": 436.7990202801694
             },
-            "_id": "656e62846d87ecc43c230b92",
+            "_id": "656e6d0ffc3a5d15f40fa43d",
+            "__v": 0
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.91048389723265,
+                    33.01252238444766
+                ]
+            },
+            "properties": {
+                "text": "Water Treatment",
+                "tempId": "dd399a89-aebd-4119-b892-d1d3400470ae",
+                "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
+                "elevation": {
+                    "geoid": 436.81999275560554
+                },
+                "created_at": 1695416490.1548042,
+                "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
+                "modified_at": 1695416499.8187797,
+                "classification": "friend"
+            },
+            "_id": "656e6d0ffc3a5d15f40fa43f",
+            "__v": 0
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -116.90823375317842,
+                        33.011780399215596
+                    ],
+                    [
+                        -116.90759436649807,
+                        33.01215556941836
+                    ],
+                    [
+                        -116.90703528178179,
+                        33.01150593081669
+                    ]
+                ]
+            },
+            "properties": {
+                "text": "Evacuation Route",
+                "center": [
+                    -116.9076345174801,
+                    33.011830750117525
+                ],
+                "tempId": "c371db07-4138-4bf7-9660-f4cf7c5d3420",
+                "buffers": [
+                    5
+                ],
+                "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
+                "created_at": 1695417127.0936735,
+                "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
+                "modified_at": 1695417180.3400152,
+                "centerHeight": 434.28685842225224,
+                "classification": "friend"
+            },
+            "_id": "656e6d0ffc3a5d15f40fa440",
+            "__v": 0
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.90813954365363,
+                    33.01167673270811
+                ]
+            },
+            "properties": {
+                "text": "Rally Point A",
+                "tempId": "bfa19d89-682a-4ae8-85c7-bbadf8891b4a",
+                "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
+                "elevation": {
+                    "geoid": 435.111046616908
+                },
+                "created_at": 1695415556.1869526,
+                "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
+                "modified_at": 1695416061.1932445,
+                "classification": "friend"
+            },
+            "_id": "656e6d0ffc3a5d15f40fa441",
             "__v": 0
         },
         {
@@ -81,7 +167,7 @@
                 "modified_at": 1695416628.5237272,
                 "classification": "friend"
             },
-            "_id": "656e62846d87ecc43c230b96",
+            "_id": "656e6d0ffc3a5d15f40fa442",
             "__v": 0
         },
         {
@@ -179,7 +265,80 @@
                 "classification": "hostile",
                 "centerOfMassHeight": 430.78783152271234
             },
-            "_id": "656e62846d87ecc43c230b97",
+            "_id": "656e6d0ffc3a5d15f40fa443",
+            "__v": 0
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -116.9073909579365,
+                            33.01162855471419
+                        ],
+                        [
+                            -116.9077667187352,
+                            33.01136392669367
+                        ],
+                        [
+                            -116.90749587786414,
+                            33.011054037542166
+                        ],
+                        [
+                            -116.90713219727557,
+                            33.0113307208545
+                        ],
+                        [
+                            -116.9073909579365,
+                            33.01162855471419
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "text": "LZ-1",
+                "tempId": "55c0a6e4-77d2-4de6-8f14-35f2e4521b3b",
+                "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
+                "created_at": 1695416362.0256863,
+                "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
+                "modified_at": 1695416369.7481923,
+                "centerOfMass": [
+                    -116.9074477890323,
+                    33.0113434287302
+                ],
+                "classification": "friend",
+                "centerOfMassHeight": 434.65678399889566
+            },
+            "_id": "656e6d0ffc3a5d15f40fa446",
+            "__v": 0
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.90868717499822,
+                    33.01592438592983
+                ]
+            },
+            "properties": {
+                "text": "Search Area",
+                "tempId": "cade0ad1-9782-4e05-a84c-7e1732f50b49",
+                "buffers": [
+                    50
+                ],
+                "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
+                "elevation": {
+                    "geoid": 433.41548408239834
+                },
+                "created_at": 1695417028.298635,
+                "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
+                "modified_at": 1695417069.077146,
+                "classification": "unknown"
+            },
+            "_id": "656e6d0ffc3a5d15f40fa447",
             "__v": 0
         },
         {
@@ -203,7 +362,7 @@
                 "modified_at": 1695416651.0719051,
                 "classification": "friend"
             },
-            "_id": "656e62846d87ecc43c230b98",
+            "_id": "656e6d0ffc3a5d15f40fa444",
             "__v": 0
         },
         {
@@ -252,221 +411,7 @@
                 "classification": "neutral",
                 "centerOfMassHeight": 435.46794491768
             },
-            "_id": "656e62846d87ecc43c230b99",
-            "__v": 0
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            -116.9073909579365,
-                            33.01162855471419
-                        ],
-                        [
-                            -116.9077667187352,
-                            33.01136392669367
-                        ],
-                        [
-                            -116.90749587786414,
-                            33.011054037542166
-                        ],
-                        [
-                            -116.90713219727557,
-                            33.0113307208545
-                        ],
-                        [
-                            -116.9073909579365,
-                            33.01162855471419
-                        ]
-                    ]
-                ]
-            },
-            "properties": {
-                "text": "LZ-1",
-                "tempId": "55c0a6e4-77d2-4de6-8f14-35f2e4521b3b",
-                "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
-                "created_at": 1695416362.0256863,
-                "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
-                "modified_at": 1695416369.7481923,
-                "centerOfMass": [
-                    -116.9074477890323,
-                    33.0113434287302
-                ],
-                "classification": "friend",
-                "centerOfMassHeight": 434.65678399889566
-            },
-            "_id": "656e62846d87ecc43c230b9a",
-            "__v": 0
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -116.91048389723265,
-                    33.01252238444766
-                ]
-            },
-            "properties": {
-                "text": "Water Treatment",
-                "tempId": "dd399a89-aebd-4119-b892-d1d3400470ae",
-                "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
-                "elevation": {
-                    "geoid": 436.81999275560554
-                },
-                "created_at": 1695416490.1548042,
-                "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
-                "description": "Water treatment facility",
-                "modified_at": 1695417446.143081,
-                "classification": "friend"
-            },
-            "_id": "656e62846d87ecc43c230b94",
-            "__v": 0
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -116.90813954365363,
-                    33.01167673270811
-                ]
-            },
-            "properties": {
-                "text": "Rally Point A",
-                "tempId": "bfa19d89-682a-4ae8-85c7-bbadf8891b4a",
-                "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
-                "elevation": {
-                    "geoid": 435.111046616908
-                },
-                "created_at": 1695415556.1869526,
-                "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
-                "modified_at": 1695416061.1932445,
-                "classification": "friend"
-            },
-            "_id": "656e62846d87ecc43c230b95",
-            "__v": 0
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -116.90771795879387,
-                    33.012529527466185
-                ]
-            },
-            "properties": {
-                "text": "Incident Command Post ",
-                "tempId": "7f24f046-8ea6-4678-abb9-bf079b2b613b",
-                "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
-                "elevation": {
-                    "geoid": 435.4444461977976
-                },
-                "created_at": 1695831641.253426,
-                "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
-                "modified_at": 1695831655.588434,
-                "classification": "unknown"
-            },
-            "_id": "656e62846d87ecc43c230b9d",
-            "__v": 0
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -116.90868717499822,
-                    33.01592438592983
-                ]
-            },
-            "properties": {
-                "text": "Search Area",
-                "tempId": "cade0ad1-9782-4e05-a84c-7e1732f50b49",
-                "buffers": [
-                    50
-                ],
-                "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
-                "elevation": {
-                    "geoid": 433.41548408239834
-                },
-                "created_at": 1695417028.298635,
-                "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
-                "modified_at": 1695417069.077146,
-                "classification": "unknown"
-            },
-            "_id": "656e62846d87ecc43c230b9b",
-            "__v": 0
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [
-                        -116.90826325436446,
-                        33.011770420969015
-                    ],
-                    [
-                        -116.90767581737956,
-                        33.01216819437575
-                    ],
-                    [
-                        -116.90706187306594,
-                        33.01152828985853
-                    ],
-                    [
-                        -116.90626545085328,
-                        33.01062316236446
-                    ],
-                    [
-                        -116.90589364695853,
-                        33.010156017415284
-                    ]
-                ]
-            },
-            "properties": {
-                "text": "Evacuation Route",
-                "center": [
-                    -116.90707845066149,
-                    33.011162105895515
-                ],
-                "tempId": "ad8828fd-bd41-4714-8252-0f0f17a5f5ce",
-                "buffers": [
-                    5
-                ],
-                "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
-                "created_at": 1695417344.9674323,
-                "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
-                "modified_at": 1695417365.4903443,
-                "centerHeight": 434.80055209923887,
-                "classification": "friend"
-            },
-            "_id": "656e62846d87ecc43c230b9c",
-            "__v": 0
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -116.9116416,
-                    33.0409304,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Ramona Airport",
-                "styleUrl": "#__managed_style_0E47DF6E792D6C9AC013",
-                "styleMapHash": {
-                    "normal": "#__managed_style_1A01FCF4AF2D6C9AC013",
-                    "highlight": "#__managed_style_22189E865A2D6C9AC013"
-                }
-            },
-            "_id": "656e644cbbc88acf8e76ebc8",
+            "_id": "656e6d0ffc3a5d15f40fa445",
             "__v": 0
         },
         {
@@ -487,7 +432,28 @@
                     "highlight": "#__managed_style_22189E865A2D6C9AC013"
                 }
             },
-            "_id": "656e644cbbc88acf8e76ebc9",
+            "_id": "656e6f8b4dfa80e4a7680fd4",
+            "__v": 0
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9116416,
+                    33.0409304,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Ramona Airport",
+                "styleUrl": "#__managed_style_0E47DF6E792D6C9AC013",
+                "styleMapHash": {
+                    "normal": "#__managed_style_1A01FCF4AF2D6C9AC013",
+                    "highlight": "#__managed_style_22189E865A2D6C9AC013"
+                }
+            },
+            "_id": "656e6f8b4dfa80e4a7680fd3",
             "__v": 0
         },
         {
@@ -508,28 +474,7 @@
                     "highlight": "#__managed_style_22189E865A2D6C9AC013"
                 }
             },
-            "_id": "656e644cbbc88acf8e76ebcb",
-            "__v": 0
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -116.9244232,
-                    33.0228118,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "San Diego Humane Society's Ramona Wildlife Center",
-                "styleUrl": "#__managed_style_0E47DF6E792D6C9AC013",
-                "styleMapHash": {
-                    "normal": "#__managed_style_1A01FCF4AF2D6C9AC013",
-                    "highlight": "#__managed_style_22189E865A2D6C9AC013"
-                }
-            },
-            "_id": "656e644cbbc88acf8e76ebca",
+            "_id": "656e6f8b4dfa80e4a7680fd6",
             "__v": 0
         },
         {
@@ -550,9 +495,72 @@
                     "highlight": "#__managed_style_22189E865A2D6C9AC013"
                 }
             },
-            "_id": "656e644cbbc88acf8e76ebcc",
+            "_id": "656e6f8b4dfa80e4a7680fd7",
+            "__v": 0
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9505358,
+                    33.0332762,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Ramona Grasslands Preserve",
+                "styleUrl": "#__managed_style_0E47DF6E792D6C9AC013",
+                "styleMapHash": {
+                    "normal": "#__managed_style_1A01FCF4AF2D6C9AC013",
+                    "highlight": "#__managed_style_22189E865A2D6C9AC013"
+                }
+            },
+            "_id": "656e6f8b4dfa80e4a7680fd8",
+            "__v": 0
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9244232,
+                    33.0228118,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "San Diego Humane Society's Ramona Wildlife Center",
+                "styleUrl": "#__managed_style_0E47DF6E792D6C9AC013",
+                "styleMapHash": {
+                    "normal": "#__managed_style_1A01FCF4AF2D6C9AC013",
+                    "highlight": "#__managed_style_22189E865A2D6C9AC013"
+                }
+            },
+            "_id": "656e6f8b4dfa80e4a7680fd5",
+            "__v": 0
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9504746,
+                    33.0592092,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Ramona Grasslands County Preserve",
+                "styleUrl": "#__managed_style_0E47DF6E792D6C9AC013",
+                "styleMapHash": {
+                    "normal": "#__managed_style_1A01FCF4AF2D6C9AC013",
+                    "highlight": "#__managed_style_22189E865A2D6C9AC013"
+                }
+            },
+            "_id": "656e6f8b4dfa80e4a7680fd9",
             "__v": 0
         }
     ],
-    "_id": "656e668e1e56b45da290cb3a"
+    "_id": "656e6f934dfa80e4a7680fe4"
 }
