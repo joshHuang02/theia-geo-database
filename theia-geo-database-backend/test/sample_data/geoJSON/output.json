@@ -6,7 +6,7 @@
         "properties": {
             "name": "urn:ogc:def:crs:EPSG::4326"
         },
-        "_id": "656e6f934dfa80e4a7680fe5"
+        "_id": "6571bf713d24599c20bae464"
     },
     "featureIds": [],
     "features": [
@@ -56,70 +56,7 @@
                 "classification": "friend",
                 "centerOfMassHeight": 436.7990202801694
             },
-            "_id": "656e6d0ffc3a5d15f40fa43d",
-            "__v": 0
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -116.91048389723265,
-                    33.01252238444766
-                ]
-            },
-            "properties": {
-                "text": "Water Treatment",
-                "tempId": "dd399a89-aebd-4119-b892-d1d3400470ae",
-                "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
-                "elevation": {
-                    "geoid": 436.81999275560554
-                },
-                "created_at": 1695416490.1548042,
-                "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
-                "modified_at": 1695416499.8187797,
-                "classification": "friend"
-            },
-            "_id": "656e6d0ffc3a5d15f40fa43f",
-            "__v": 0
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [
-                        -116.90823375317842,
-                        33.011780399215596
-                    ],
-                    [
-                        -116.90759436649807,
-                        33.01215556941836
-                    ],
-                    [
-                        -116.90703528178179,
-                        33.01150593081669
-                    ]
-                ]
-            },
-            "properties": {
-                "text": "Evacuation Route",
-                "center": [
-                    -116.9076345174801,
-                    33.011830750117525
-                ],
-                "tempId": "c371db07-4138-4bf7-9660-f4cf7c5d3420",
-                "buffers": [
-                    5
-                ],
-                "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
-                "created_at": 1695417127.0936735,
-                "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
-                "modified_at": 1695417180.3400152,
-                "centerHeight": 434.28685842225224,
-                "classification": "friend"
-            },
-            "_id": "656e6d0ffc3a5d15f40fa440",
+            "_id": "6571bea8aa08d8b846566e26",
             "__v": 0
         },
         {
@@ -143,7 +80,7 @@
                 "modified_at": 1695416061.1932445,
                 "classification": "friend"
             },
-            "_id": "656e6d0ffc3a5d15f40fa441",
+            "_id": "6571bea8aa08d8b846566e2a",
             "__v": 0
         },
         {
@@ -167,7 +104,7 @@
                 "modified_at": 1695416628.5237272,
                 "classification": "friend"
             },
-            "_id": "656e6d0ffc3a5d15f40fa442",
+            "_id": "6571bea8aa08d8b846566e2b",
             "__v": 0
         },
         {
@@ -265,53 +202,94 @@
                 "classification": "hostile",
                 "centerOfMassHeight": 430.78783152271234
             },
-            "_id": "656e6d0ffc3a5d15f40fa443",
+            "_id": "6571bea8aa08d8b846566e2c",
             "__v": 0
         },
         {
             "type": "Feature",
             "geometry": {
-                "type": "Polygon",
+                "type": "Point",
+                "coordinates": [
+                    -116.90594162111947,
+                    33.01448994334887
+                ]
+            },
+            "properties": {
+                "text": "Post Office",
+                "tempId": "782c55db-e262-420f-8b44-c503edc3d3e7",
+                "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
+                "elevation": {
+                    "geoid": 435.10802746483165
+                },
+                "created_at": 1695416644.9325743,
+                "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
+                "modified_at": 1695416651.0719051,
+                "classification": "friend"
+            },
+            "_id": "6571bea8aa08d8b846566e2d",
+            "__v": 0
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.91048389723265,
+                    33.01252238444766
+                ]
+            },
+            "properties": {
+                "text": "Water Treatment",
+                "tempId": "dd399a89-aebd-4119-b892-d1d3400470ae",
+                "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
+                "elevation": {
+                    "geoid": 436.81999275560554
+                },
+                "created_at": 1695416490.1548042,
+                "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
+                "modified_at": 1695416499.8187797,
+                "classification": "friend"
+            },
+            "_id": "6571bea8aa08d8b846566e28",
+            "__v": 0
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
                 "coordinates": [
                     [
-                        [
-                            -116.9073909579365,
-                            33.01162855471419
-                        ],
-                        [
-                            -116.9077667187352,
-                            33.01136392669367
-                        ],
-                        [
-                            -116.90749587786414,
-                            33.011054037542166
-                        ],
-                        [
-                            -116.90713219727557,
-                            33.0113307208545
-                        ],
-                        [
-                            -116.9073909579365,
-                            33.01162855471419
-                        ]
+                        -116.90823375317842,
+                        33.011780399215596
+                    ],
+                    [
+                        -116.90759436649807,
+                        33.01215556941836
+                    ],
+                    [
+                        -116.90703528178179,
+                        33.01150593081669
                     ]
                 ]
             },
             "properties": {
-                "text": "LZ-1",
-                "tempId": "55c0a6e4-77d2-4de6-8f14-35f2e4521b3b",
-                "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
-                "created_at": 1695416362.0256863,
-                "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
-                "modified_at": 1695416369.7481923,
-                "centerOfMass": [
-                    -116.9074477890323,
-                    33.0113434287302
+                "text": "Evacuation Route",
+                "center": [
+                    -116.9076345174801,
+                    33.011830750117525
                 ],
-                "classification": "friend",
-                "centerOfMassHeight": 434.65678399889566
+                "tempId": "c371db07-4138-4bf7-9660-f4cf7c5d3420",
+                "buffers": [
+                    5
+                ],
+                "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
+                "created_at": 1695417127.0936735,
+                "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
+                "modified_at": 1695417180.3400152,
+                "centerHeight": 434.28685842225224,
+                "classification": "friend"
             },
-            "_id": "656e6d0ffc3a5d15f40fa446",
+            "_id": "6571bea8aa08d8b846566e29",
             "__v": 0
         },
         {
@@ -338,31 +316,7 @@
                 "modified_at": 1695417069.077146,
                 "classification": "unknown"
             },
-            "_id": "656e6d0ffc3a5d15f40fa447",
-            "__v": 0
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -116.90594162111947,
-                    33.01448994334887
-                ]
-            },
-            "properties": {
-                "text": "Post Office",
-                "tempId": "782c55db-e262-420f-8b44-c503edc3d3e7",
-                "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
-                "elevation": {
-                    "geoid": 435.10802746483165
-                },
-                "created_at": 1695416644.9325743,
-                "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
-                "modified_at": 1695416651.0719051,
-                "classification": "friend"
-            },
-            "_id": "656e6d0ffc3a5d15f40fa444",
+            "_id": "6571bea8aa08d8b846566e30",
             "__v": 0
         },
         {
@@ -411,28 +365,53 @@
                 "classification": "neutral",
                 "centerOfMassHeight": 435.46794491768
             },
-            "_id": "656e6d0ffc3a5d15f40fa445",
+            "_id": "6571bea8aa08d8b846566e2e",
             "__v": 0
         },
         {
             "type": "Feature",
             "geometry": {
-                "type": "Point",
+                "type": "Polygon",
                 "coordinates": [
-                    -116.8792553,
-                    33.04136039999999,
-                    0
+                    [
+                        [
+                            -116.9073909579365,
+                            33.01162855471419
+                        ],
+                        [
+                            -116.9077667187352,
+                            33.01136392669367
+                        ],
+                        [
+                            -116.90749587786414,
+                            33.011054037542166
+                        ],
+                        [
+                            -116.90713219727557,
+                            33.0113307208545
+                        ],
+                        [
+                            -116.9073909579365,
+                            33.01162855471419
+                        ]
+                    ]
                 ]
             },
             "properties": {
-                "name": "Ramona",
-                "styleUrl": "#__managed_style_0E47DF6E792D6C9AC013",
-                "styleMapHash": {
-                    "normal": "#__managed_style_1A01FCF4AF2D6C9AC013",
-                    "highlight": "#__managed_style_22189E865A2D6C9AC013"
-                }
+                "text": "LZ-1",
+                "tempId": "55c0a6e4-77d2-4de6-8f14-35f2e4521b3b",
+                "layer_id": "689343d9-7000-47ec-b619-11abe03088cb",
+                "created_at": 1695416362.0256863,
+                "mission_id": "8833eaec-2839-4b29-a210-7ea27d0423b3",
+                "modified_at": 1695416369.7481923,
+                "centerOfMass": [
+                    -116.9074477890323,
+                    33.0113434287302
+                ],
+                "classification": "friend",
+                "centerOfMassHeight": 434.65678399889566
             },
-            "_id": "656e6f8b4dfa80e4a7680fd4",
+            "_id": "6571bea8aa08d8b846566e2f",
             "__v": 0
         },
         {
@@ -447,76 +426,13 @@
             },
             "properties": {
                 "name": "Ramona Airport",
-                "styleUrl": "#__managed_style_0E47DF6E792D6C9AC013",
+                "styleUrl": "#__managed_style_005C3E2EF12D79B1766B",
                 "styleMapHash": {
-                    "normal": "#__managed_style_1A01FCF4AF2D6C9AC013",
-                    "highlight": "#__managed_style_22189E865A2D6C9AC013"
+                    "normal": "#__managed_style_1E29B4E3092D79B1766B",
+                    "highlight": "#__managed_style_2BBBFBAAA62D79B1766B"
                 }
             },
-            "_id": "656e6f8b4dfa80e4a7680fd3",
-            "__v": 0
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -116.8963363,
-                    33.00622,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Holly Oaks County Preserve",
-                "styleUrl": "#__managed_style_0E47DF6E792D6C9AC013",
-                "styleMapHash": {
-                    "normal": "#__managed_style_1A01FCF4AF2D6C9AC013",
-                    "highlight": "#__managed_style_22189E865A2D6C9AC013"
-                }
-            },
-            "_id": "656e6f8b4dfa80e4a7680fd6",
-            "__v": 0
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -116.8901918,
-                    33.0182393,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Hanson Elementary School",
-                "styleUrl": "#__managed_style_0E47DF6E792D6C9AC013",
-                "styleMapHash": {
-                    "normal": "#__managed_style_1A01FCF4AF2D6C9AC013",
-                    "highlight": "#__managed_style_22189E865A2D6C9AC013"
-                }
-            },
-            "_id": "656e6f8b4dfa80e4a7680fd7",
-            "__v": 0
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -116.9505358,
-                    33.0332762,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Ramona Grasslands Preserve",
-                "styleUrl": "#__managed_style_0E47DF6E792D6C9AC013",
-                "styleMapHash": {
-                    "normal": "#__managed_style_1A01FCF4AF2D6C9AC013",
-                    "highlight": "#__managed_style_22189E865A2D6C9AC013"
-                }
-            },
-            "_id": "656e6f8b4dfa80e4a7680fd8",
+            "_id": "6571befa049c1b168c87feb3",
             "__v": 0
         },
         {
@@ -531,13 +447,34 @@
             },
             "properties": {
                 "name": "San Diego Humane Society's Ramona Wildlife Center",
-                "styleUrl": "#__managed_style_0E47DF6E792D6C9AC013",
+                "styleUrl": "#__managed_style_005C3E2EF12D79B1766B",
                 "styleMapHash": {
-                    "normal": "#__managed_style_1A01FCF4AF2D6C9AC013",
-                    "highlight": "#__managed_style_22189E865A2D6C9AC013"
+                    "normal": "#__managed_style_1E29B4E3092D79B1766B",
+                    "highlight": "#__managed_style_2BBBFBAAA62D79B1766B"
                 }
             },
-            "_id": "656e6f8b4dfa80e4a7680fd5",
+            "_id": "6571befa049c1b168c87feb4",
+            "__v": 0
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9505358,
+                    33.0332762,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Ramona Grasslands Preserve",
+                "styleUrl": "#__managed_style_005C3E2EF12D79B1766B",
+                "styleMapHash": {
+                    "normal": "#__managed_style_1E29B4E3092D79B1766B",
+                    "highlight": "#__managed_style_2BBBFBAAA62D79B1766B"
+                }
+            },
+            "_id": "6571befa049c1b168c87feb7",
             "__v": 0
         },
         {
@@ -552,15 +489,272 @@
             },
             "properties": {
                 "name": "Ramona Grasslands County Preserve",
-                "styleUrl": "#__managed_style_0E47DF6E792D6C9AC013",
+                "styleUrl": "#__managed_style_005C3E2EF12D79B1766B",
                 "styleMapHash": {
-                    "normal": "#__managed_style_1A01FCF4AF2D6C9AC013",
-                    "highlight": "#__managed_style_22189E865A2D6C9AC013"
+                    "normal": "#__managed_style_1E29B4E3092D79B1766B",
+                    "highlight": "#__managed_style_2BBBFBAAA62D79B1766B"
                 }
             },
-            "_id": "656e6f8b4dfa80e4a7680fd9",
+            "_id": "6571befa049c1b168c87feb8",
+            "__v": 0
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -116.8664786723149,
+                            33.08003922951247,
+                            0
+                        ],
+                        [
+                            -116.8728295575958,
+                            33.07727047370819,
+                            0
+                        ],
+                        [
+                            -116.8744039436292,
+                            33.07266176128963,
+                            0
+                        ],
+                        [
+                            -116.880876322843,
+                            33.06831890277915,
+                            0
+                        ],
+                        [
+                            -116.8802397380129,
+                            33.05876674278408,
+                            0
+                        ],
+                        [
+                            -116.8841722370888,
+                            33.05809683589461,
+                            0
+                        ],
+                        [
+                            -116.8973748039588,
+                            33.05729719317706,
+                            0
+                        ],
+                        [
+                            -116.8972770682863,
+                            33.05203254251766,
+                            0
+                        ],
+                        [
+                            -116.9053331021133,
+                            33.05123839706311,
+                            0
+                        ],
+                        [
+                            -116.9053403908219,
+                            33.04766653652822,
+                            0
+                        ],
+                        [
+                            -116.9064490869867,
+                            33.04210789406507,
+                            0
+                        ],
+                        [
+                            -116.8993365200508,
+                            33.03986350600233,
+                            0
+                        ],
+                        [
+                            -116.8987073332712,
+                            33.03615778222972,
+                            0
+                        ],
+                        [
+                            -116.9013840168641,
+                            33.03166312233924,
+                            0
+                        ],
+                        [
+                            -116.9037242460594,
+                            33.03069047787869,
+                            0
+                        ],
+                        [
+                            -116.9012362720408,
+                            33.02215117255921,
+                            0
+                        ],
+                        [
+                            -116.8925407786731,
+                            33.02226465131181,
+                            0
+                        ],
+                        [
+                            -116.8923490670061,
+                            33.01844158431597,
+                            0
+                        ],
+                        [
+                            -116.8709307552111,
+                            33.01854477002346,
+                            0
+                        ],
+                        [
+                            -116.8707822740973,
+                            33.02163047644302,
+                            0
+                        ],
+                        [
+                            -116.8664653148677,
+                            33.02144513283853,
+                            0
+                        ],
+                        [
+                            -116.866359497677,
+                            33.01810823256048,
+                            0
+                        ],
+                        [
+                            -116.8408189975146,
+                            33.01846953993861,
+                            0
+                        ],
+                        [
+                            -116.8408288231557,
+                            33.02734442209567,
+                            0
+                        ],
+                        [
+                            -116.8363308878862,
+                            33.02758982037705,
+                            0
+                        ],
+                        [
+                            -116.8289909852702,
+                            33.03740996005604,
+                            0
+                        ],
+                        [
+                            -116.8317456114088,
+                            33.04957523126007,
+                            0
+                        ],
+                        [
+                            -116.8379489265153,
+                            33.0546981267883,
+                            0
+                        ],
+                        [
+                            -116.8343099445407,
+                            33.05894368841379,
+                            0
+                        ],
+                        [
+                            -116.8333981209783,
+                            33.06553494016032,
+                            0
+                        ],
+                        [
+                            -116.8373388553999,
+                            33.07075786428375,
+                            0
+                        ],
+                        [
+                            -116.8311405820309,
+                            33.07907810196594,
+                            0
+                        ],
+                        [
+                            -116.8377696126388,
+                            33.08244199417307,
+                            0
+                        ],
+                        [
+                            -116.844333791982,
+                            33.08180306623949,
+                            0
+                        ],
+                        [
+                            -116.8464722926857,
+                            33.0744339367561,
+                            0
+                        ],
+                        [
+                            -116.850497844286,
+                            33.07486706653843,
+                            0
+                        ],
+                        [
+                            -116.8518012531718,
+                            33.08179438339241,
+                            0
+                        ],
+                        [
+                            -116.8600223002315,
+                            33.08222354278013,
+                            0
+                        ],
+                        [
+                            -116.8664786723149,
+                            33.08003922951247,
+                            0
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Ramona",
+                "styleUrl": "#__managed_style_025F09DEBE2D79B30FF7",
+                "styleMapHash": {
+                    "normal": "#__managed_style_146C81D0942D79B30FF7",
+                    "highlight": "#__managed_style_22D94D6B752D79B30FF7"
+                }
+            },
+            "_id": "6571befa049c1b168c87feb9",
+            "__v": 0
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.8963363,
+                    33.00622,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Holly Oaks County Preserve",
+                "styleUrl": "#__managed_style_005C3E2EF12D79B1766B",
+                "styleMapHash": {
+                    "normal": "#__managed_style_1E29B4E3092D79B1766B",
+                    "highlight": "#__managed_style_2BBBFBAAA62D79B1766B"
+                }
+            },
+            "_id": "6571befa049c1b168c87feb5",
+            "__v": 0
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.8901918,
+                    33.0182393,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Hanson Elementary School",
+                "styleUrl": "#__managed_style_005C3E2EF12D79B1766B",
+                "styleMapHash": {
+                    "normal": "#__managed_style_1E29B4E3092D79B1766B",
+                    "highlight": "#__managed_style_2BBBFBAAA62D79B1766B"
+                }
+            },
+            "_id": "6571befa049c1b168c87feb6",
             "__v": 0
         }
     ],
-    "_id": "656e6f934dfa80e4a7680fe4"
+    "_id": "6571bf713d24599c20bae463"
 }
