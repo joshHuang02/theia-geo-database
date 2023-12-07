@@ -1,9 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
-<Document>
+<Document id="18wVXmH5WYK3t0gmF8QfcBFIwqvRRwX1Z">
 	<name>Theia additional features</name>
 	<description>additional features for project theia database demo</description>
-	<gx:CascadingStyle kml:id="__managed_style_22189E865A2D6C9AC013">
+	<gx:CascadingStyle kml:id="__managed_style_22D94D6B752D79B30FF7">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/rpc/cc/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_146C81D0942D79B30FF7">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/rpc/cc/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_2BBBFBAAA62D79B1766B">
 		<Style>
 			<IconStyle>
 				<scale>1.2</scale>
@@ -16,7 +59,7 @@
 			</LabelStyle>
 			<LineStyle>
 				<color>ff2dc0fb</color>
-				<width>3</width>
+				<width>6</width>
 			</LineStyle>
 			<PolyStyle>
 				<color>40ffffff</color>
@@ -26,7 +69,7 @@
 			</BalloonStyle>
 		</Style>
 	</gx:CascadingStyle>
-	<gx:CascadingStyle kml:id="__managed_style_1A01FCF4AF2D6C9AC013">
+	<gx:CascadingStyle kml:id="__managed_style_1E29B4E3092D79B1766B">
 		<Style>
 			<IconStyle>
 				<Icon>
@@ -38,7 +81,7 @@
 			</LabelStyle>
 			<LineStyle>
 				<color>ff2dc0fb</color>
-				<width>2</width>
+				<width>4</width>
 			</LineStyle>
 			<PolyStyle>
 				<color>40ffffff</color>
@@ -48,14 +91,24 @@
 			</BalloonStyle>
 		</Style>
 	</gx:CascadingStyle>
-	<StyleMap id="__managed_style_0E47DF6E792D6C9AC013">
+	<StyleMap id="__managed_style_025F09DEBE2D79B30FF7">
 		<Pair>
 			<key>normal</key>
-			<styleUrl>#__managed_style_1A01FCF4AF2D6C9AC013</styleUrl>
+			<styleUrl>#__managed_style_146C81D0942D79B30FF7</styleUrl>
 		</Pair>
 		<Pair>
 			<key>highlight</key>
-			<styleUrl>#__managed_style_22189E865A2D6C9AC013</styleUrl>
+			<styleUrl>#__managed_style_22D94D6B752D79B30FF7</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="__managed_style_005C3E2EF12D79B1766B">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_1E29B4E3092D79B1766B</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_2BBBFBAAA62D79B1766B</styleUrl>
 		</Pair>
 	</StyleMap>
 	<Placemark id="072CD420AC2D6C9AC008">
@@ -72,30 +125,10 @@
 			<range>868.5086413571901</range>
 			<altitudeMode>relativeToGround</altitudeMode>
 		</LookAt>
-		<styleUrl>#__managed_style_0E47DF6E792D6C9AC013</styleUrl>
+		<styleUrl>#__managed_style_005C3E2EF12D79B1766B</styleUrl>
 		<Point>
 			<altitudeMode>relativeToGround</altitudeMode>
 			<coordinates>-116.9116416,33.0409304,0</coordinates>
-		</Point>
-	</Placemark>
-	<Placemark id="003744CBD92D6C9B62FA">
-		<name>Ramona</name>
-		<gx:mid>/m/0r55g</gx:mid>
-		<gx:fid>0x80dbe8647999d41f:0x58bd67c3d0b3c219</gx:fid>
-		<LookAt>
-			<longitude>-116.87019705</longitude>
-			<latitude>33.0352805</latitude>
-			<altitude>0</altitude>
-			<heading>0</heading>
-			<tilt>0</tilt>
-			<gx:fovy>35</gx:fovy>
-			<range>19488.78603645705</range>
-			<altitudeMode>relativeToGround</altitudeMode>
-		</LookAt>
-		<styleUrl>#__managed_style_0E47DF6E792D6C9AC013</styleUrl>
-		<Point>
-			<altitudeMode>relativeToGround</altitudeMode>
-			<coordinates>-116.8792553,33.04136039999999,0</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark id="089993B1C92D6C9CDD4B">
@@ -112,7 +145,7 @@
 			<range>868.7055539178882</range>
 			<altitudeMode>relativeToGround</altitudeMode>
 		</LookAt>
-		<styleUrl>#__managed_style_0E47DF6E792D6C9AC013</styleUrl>
+		<styleUrl>#__managed_style_005C3E2EF12D79B1766B</styleUrl>
 		<Point>
 			<altitudeMode>relativeToGround</altitudeMode>
 			<coordinates>-116.9244232,33.0228118,0</coordinates>
@@ -132,7 +165,7 @@
 			<range>868.8857848897622</range>
 			<altitudeMode>relativeToGround</altitudeMode>
 		</LookAt>
-		<styleUrl>#__managed_style_0E47DF6E792D6C9AC013</styleUrl>
+		<styleUrl>#__managed_style_005C3E2EF12D79B1766B</styleUrl>
 		<Point>
 			<altitudeMode>relativeToGround</altitudeMode>
 			<coordinates>-116.8963363,33.00622,0</coordinates>
@@ -152,7 +185,7 @@
 			<range>868.7552307885209</range>
 			<altitudeMode>relativeToGround</altitudeMode>
 		</LookAt>
-		<styleUrl>#__managed_style_0E47DF6E792D6C9AC013</styleUrl>
+		<styleUrl>#__managed_style_005C3E2EF12D79B1766B</styleUrl>
 		<Point>
 			<altitudeMode>relativeToGround</altitudeMode>
 			<coordinates>-116.8901918,33.0182393,0</coordinates>
@@ -172,7 +205,7 @@
 			<range>868.5918447103137</range>
 			<altitudeMode>relativeToGround</altitudeMode>
 		</LookAt>
-		<styleUrl>#__managed_style_0E47DF6E792D6C9AC013</styleUrl>
+		<styleUrl>#__managed_style_005C3E2EF12D79B1766B</styleUrl>
 		<Point>
 			<altitudeMode>relativeToGround</altitudeMode>
 			<coordinates>-116.9505358,33.0332762,0</coordinates>
@@ -192,11 +225,34 @@
 			<range>868.3099223705789</range>
 			<altitudeMode>relativeToGround</altitudeMode>
 		</LookAt>
-		<styleUrl>#__managed_style_0E47DF6E792D6C9AC013</styleUrl>
+		<styleUrl>#__managed_style_005C3E2EF12D79B1766B</styleUrl>
 		<Point>
 			<altitudeMode>relativeToGround</altitudeMode>
 			<coordinates>-116.9504746,33.0592092,0</coordinates>
 		</Point>
+	</Placemark>
+	<Placemark id="0F7E292F212D79B30FF6">
+		<name>Ramona</name>
+		<LookAt>
+			<longitude>-116.8851149745974</longitude>
+			<latitude>33.05759695376558</latitude>
+			<altitude>506.2221948774579</altitude>
+			<heading>2.80162918316907e-07</heading>
+			<tilt>0.36787376725652</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>18937.98551894026</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_025F09DEBE2D79B30FF7</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-116.8664786723149,33.08003922951247,0 -116.8728295575958,33.07727047370819,0 -116.8744039436292,33.07266176128963,0 -116.880876322843,33.06831890277915,0 -116.8802397380129,33.05876674278408,0 -116.8841722370888,33.05809683589461,0 -116.8973748039588,33.05729719317706,0 -116.8972770682863,33.05203254251766,0 -116.9053331021133,33.05123839706311,0 -116.9053403908219,33.04766653652822,0 -116.9064490869867,33.04210789406507,0 -116.8993365200508,33.03986350600233,0 -116.8987073332712,33.03615778222972,0 -116.9013840168641,33.03166312233924,0 -116.9037242460594,33.03069047787869,0 -116.9012362720408,33.02215117255921,0 -116.8925407786731,33.02226465131181,0 -116.8923490670061,33.01844158431597,0 -116.8709307552111,33.01854477002346,0 -116.8707822740973,33.02163047644302,0 -116.8664653148677,33.02144513283853,0 -116.866359497677,33.01810823256048,0 -116.8408189975146,33.01846953993861,0 -116.8408288231557,33.02734442209567,0 -116.8363308878862,33.02758982037705,0 -116.8289909852702,33.03740996005604,0 -116.8317456114088,33.04957523126007,0 -116.8379489265153,33.0546981267883,0 -116.8343099445407,33.05894368841379,0 -116.8333981209783,33.06553494016032,0 -116.8373388553999,33.07075786428375,0 -116.8311405820309,33.07907810196594,0 -116.8377696126388,33.08244199417307,0 -116.844333791982,33.08180306623949,0 -116.8464722926857,33.0744339367561,0 -116.850497844286,33.07486706653843,0 -116.8518012531718,33.08179438339241,0 -116.8600223002315,33.08222354278013,0 -116.8664786723149,33.08003922951247,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
 	</Placemark>
 </Document>
 </kml>
